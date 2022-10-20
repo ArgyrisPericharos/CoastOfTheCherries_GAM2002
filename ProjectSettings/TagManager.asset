@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hotspot
+  - Adjacent_to_10
+  - Adjacent_to_9
   layers:
   - Default
   - TransparentFX
