@@ -7,6 +7,14 @@ TagManager:
   - Hotspot
   - Adjacent_to_10
   - Adjacent_to_9
+  - Adjacent_to_8
+  - Adjacent_to_7
+  - Adjacent_to_6
+  - Adjacent_to_5
+  - Adjacent_to_4
+  - Adjacent_to_3
+  - Adjacent_to_2
+  - Adjacent_to_1
   layers:
   - Default
   - TransparentFX
