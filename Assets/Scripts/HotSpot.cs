@@ -7,6 +7,8 @@ public class HotSpot : MonoBehaviour
     public GameObject[] Adjacent;
     private GameObject[] Pawns;
     private GameObject currentPawn;
+
+    public GameManager gamemanager;
     //private List<GameObject> ListPawns;
     // Start is called before the first frame update
     void Start()
@@ -63,8 +65,10 @@ public class HotSpot : MonoBehaviour
                 //then move the pawn here
                 currentPawn.transform.position = gameObject.transform.position;
                 currentPawn.GetComponent<PawnScript>().newHotspot = this;
+                gamemanager.GetComponent<GameManager>().PawnMoved = true;
 
             }
+
         }
 
 }

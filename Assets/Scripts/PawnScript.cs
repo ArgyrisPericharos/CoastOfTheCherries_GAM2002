@@ -30,7 +30,9 @@ public class PawnScript : MonoBehaviour
             currentHotspot = newHotspot;
             availableMoves = currentHotspot.getAdjacents();
         }
-        
+
+
+
     }
 
     void OnMouseUp()
