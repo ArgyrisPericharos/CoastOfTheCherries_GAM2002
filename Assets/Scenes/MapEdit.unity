@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &100409736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292, y: -215}
+  m_AnchoredPosition: {x: 422, y: -296}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256154413
@@ -2295,7 +2295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -293, y: -215}
+  m_AnchoredPosition: {x: -417, y: -296}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1130121286
@@ -4506,6 +4506,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520c6af9f7bd1934ebaeeb8b4bfefe89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starterDeck: {fileID: 11400000, guid: 6d7450f815ae61648b5ce7d78af177dc, type: 2}
+  AddedDeck: {fileID: 11400000, guid: d2d2440986a1a2d49a364ae5260e62e5, type: 2}
+  availableDecks: []
   Resource01: 50
   Resource02: 50
   Resource03: 50
@@ -4529,12 +4532,11 @@ MonoBehaviour:
   MainBodyText: {fileID: 106797330}
   ChoiceOneText: {fileID: 2124651259}
   ChoiceTwoText: {fileID: 1212466083}
-  eventList:
-  - {fileID: 11400000, guid: 90f01049f48ed084092294e7d64225e1, type: 2}
-  - {fileID: 11400000, guid: e7e830dc8370a644fa5f3353f572256f, type: 2}
+  eventList: []
   Choises: {fileID: 770429509}
   WordsImage: {fileID: 1691070320}
   PawnMoved: 0
+  AddDeck: 0
 --- !u!4 &2006142423
 Transform:
   m_ObjectHideFlags: 0

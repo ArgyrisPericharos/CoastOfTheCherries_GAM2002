@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public DeckTemplate starterDeck;
+    public DeckTemplate AddedDeck;
+
+    public List<DeckTemplate> availableDecks;
+
     public int Resource01;
     public int Resource02;
     public int Resource03;
@@ -39,16 +44,21 @@ public class GameManager : MonoBehaviour
 
     private bool eventSet;
     private bool showAfter;
+    private bool endGame;
     private string OutcomeText;
+    private string EndingText;
 
     public GameObject Choises;
     public GameObject WordsImage;
 
     public bool PawnMoved;
 
+    public bool AddDeckResource10;
+
     // Start is called before the first frame update
     void Start()
     {
+        AddDeckResource10 = false;
         GenerateEventList();
 
         ResourceBar01Text.text = Resource01Name;
@@ -93,27 +103,65 @@ public class GameManager : MonoBehaviour
             eventSet = true;
         }
 
+
+        if (!AddDeckResource10 && Resource01 < 1)
+        {
+            foreach (EventTemplate eventCard in AddedDeck.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource10 = true;
+
+        }
+
+       
     }
 
     public void GenerateEventList()
     {
         //Grab the deck from somewhere and shuffle the contents into the list on the manager
+        //reset the flags
+        endGame = false;
+        showAfter = false;
+        eventSet = false;
+        //Grab the deck from somewhere and shuffle the contents into the list on the manager
+        //
+        //eventList = starterDeck.EventDeck;
+        foreach (EventTemplate eventCard in starterDeck.EventDeck)
+        {
+            eventList.Add(eventCard);
+        }
+       
+
+        //shuffle
+        shuffleEventList();
 
     }
 
     public void ShowEventData()
     {
-        ChoiceOneText.transform.parent.gameObject.SetActive(true);
-        MainBodyText.text = eventList[0].Description;
-        ChoiceOneText.text = eventList[0].Choice01;
-        ChoiceTwoText.text = eventList[0].Choice02;
+        if (eventList.Count < 1)
+        {
+            EndingText = "No More Cards!";
+            endGame = true;
+        }
+        else
+        {
+            ChoiceOneText.transform.parent.gameObject.SetActive(true);
+            MainBodyText.text = eventList[0].Description;
+            ChoiceOneText.text = eventList[0].Choice01;
+            ChoiceTwoText.text = eventList[0].Choice02;
+        }
 
     }
 
     public void ShowEventAftermath()
     {
         MainBodyText.text = OutcomeText;
-        ChoiceTwoText.text = "OK";
+        ChoiceTwoText.text = "Okay";
         ChoiceOneText.transform.parent.gameObject.SetActive(false);
     }
 
@@ -168,5 +216,20 @@ public class GameManager : MonoBehaviour
 
 
         }
+    }
+    void shuffleEventList()
+    {
+        for (int i = 0; i < eventList.Count; i++)
+        {
+            EventTemplate temp = eventList[i];
+            int RandomIndex = Random.Range(i, eventList.Count);
+            eventList[i] = eventList[RandomIndex];
+            eventList[RandomIndex] = temp;
+        }
+    }
+
+    void GenerateFileList()
+    {
+
     }
 }
