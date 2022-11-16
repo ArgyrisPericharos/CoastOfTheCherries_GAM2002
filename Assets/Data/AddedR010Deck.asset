@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebba3d5ccbe0c5145b344dbb6a3b8bc9, type: 3}
-  m_Name: AddedDeck
+  m_Name: AddedR010Deck
   m_EditorClassIdentifier: 
-  DeckDescription: 
+  DeckDescription: Recource10deck
   EventDeck:
   - {fileID: 11400000, guid: 11cacd5d27d266f4cb52b96af231333a, type: 2}
   - {fileID: 11400000, guid: 4ed3d9f5899f277499d400f9d0902385, type: 2}

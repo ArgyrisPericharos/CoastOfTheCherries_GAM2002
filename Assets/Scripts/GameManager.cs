@@ -6,7 +6,37 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public DeckTemplate starterDeck;
-    public DeckTemplate AddedDeck;
+    //starter deck
+    public DeckTemplate AddedDeckResource10;
+    public DeckTemplate AddedDeckResource1100;
+    public DeckTemplate AddedDeckResource175;
+    public DeckTemplate AddedDeckResource125;
+    //recourse 1 decks at 0, 25, 75 and 100;
+
+    public DeckTemplate AddedDeckResource20;
+    public DeckTemplate AddedDeckResource2100;
+    public DeckTemplate AddedDeckResource275;
+    public DeckTemplate AddedDeckResource225;
+    //recourse 2 decks at 0, 25, 75 and 100;
+
+    public DeckTemplate AddedDeckResource30;
+    public DeckTemplate AddedDeckResource3100;
+    public DeckTemplate AddedDeckResource375;
+    public DeckTemplate AddedDeckResource325;
+    //recourse 3 decks at 0, 25, 75 and 100;
+
+    public DeckTemplate AddedDeckResource40;
+    public DeckTemplate AddedDeckResource4100;
+    public DeckTemplate AddedDeckResource475;
+    public DeckTemplate AddedDeckResource425;
+    //recourse 4 decks at 0, 25, 75 and 100;
+
+    public DeckTemplate AddedDeckResource50;
+    public DeckTemplate AddedDeckResource5100;
+    public DeckTemplate AddedDeckResource575;
+    public DeckTemplate AddedDeckResource525;
+    //recourse 5 decks at 0, 25, 75 and 100;
+
 
     public List<DeckTemplate> availableDecks;
 
@@ -54,6 +84,34 @@ public class GameManager : MonoBehaviour
     public bool PawnMoved;
 
     public bool AddDeckResource10;
+    public bool AddDeckResource1100;
+    public bool AddDeckResource175;
+    public bool AddDeckResource125;
+    // boolean for recource 1 checks. Will also use them for caps.
+
+    public bool AddDeckResource20;
+    public bool AddDeckResource2100;
+    public bool AddDeckResource275;
+    public bool AddDeckResource225;
+    // boolean for recource 2 checks. Will also use them for caps.
+
+    public bool AddDeckResource30;
+    public bool AddDeckResource3100;
+    public bool AddDeckResource375;
+    public bool AddDeckResource325;
+    // boolean for recource 3 checks. Will also use them for caps.
+
+    public bool AddDeckResource40;
+    public bool AddDeckResource4100;
+    public bool AddDeckResource475;
+    public bool AddDeckResource425;
+    // boolean for recource 4 checks. Will also use them for caps.
+
+    public bool AddDeckResource50;
+    public bool AddDeckResource5100;
+    public bool AddDeckResource575;
+    public bool AddDeckResource525;
+    // boolean for recource 5 checks. Will also use them for caps.
 
     // Start is called before the first frame update
     void Start()
@@ -106,7 +164,7 @@ public class GameManager : MonoBehaviour
 
         if (!AddDeckResource10 && Resource01 < 1)
         {
-            foreach (EventTemplate eventCard in AddedDeck.EventDeck)
+            foreach (EventTemplate eventCard in AddedDeckResource10.EventDeck)
             {
                 eventList.Add(eventCard);
 
@@ -117,7 +175,245 @@ public class GameManager : MonoBehaviour
 
         }
 
-       
+        if (!AddDeckResource1100 && Resource01 >= 100)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource1100.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource1100 = true;
+
+        }
+        if (!AddDeckResource175 && Resource01 >= 75)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource175.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource175 = true;
+
+        }
+        if (!AddDeckResource125 && Resource01 <= 25)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource125.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource125 = true;
+
+        }
+
+        if (!AddDeckResource20 && Resource02 < 1)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource20.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource20 = true;
+
+        }
+
+        if (!AddDeckResource2100 && Resource02 >= 100)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource2100.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource2100 = true;
+
+        }
+        if (!AddDeckResource275 && Resource02 >= 75)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource275.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource275 = true;
+
+        }
+        if (!AddDeckResource225 && Resource02 <= 25)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource225.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource225 = true;
+
+        }
+
+
+        if (!AddDeckResource30 && Resource03 < 1)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource30.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource30 = true;
+
+        }
+
+        if (!AddDeckResource3100 && Resource03 >= 100)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource3100.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource3100 = true;
+
+        }
+        if (!AddDeckResource375 && Resource03 >= 75)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource375.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource375 = true;
+
+        }
+        if (!AddDeckResource325 && Resource03 <= 25)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource325.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource325 = true;
+
+        }
+
+        if (!AddDeckResource40 && Resource04 < 1)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource40.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource40 = true;
+
+        }
+
+        if (!AddDeckResource4100 && Resource04 >= 100)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource4100.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource4100 = true;
+
+        }
+        if (!AddDeckResource475 && Resource04 >= 75)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource475.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource475 = true;
+
+        }
+        if (!AddDeckResource425 && Resource04 <= 25)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource425.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource425 = true;
+
+        }
+
+        if (!AddDeckResource50 && Resource05 < 1)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource50.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource50 = true;
+
+        }
+
+        if (!AddDeckResource5100 && Resource05 >= 100)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource5100.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource5100 = true;
+
+        }
+        if (!AddDeckResource575 && Resource05 >= 75)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource575.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource575 = true;
+
+        }
+        if (!AddDeckResource525 && Resource05 <= 25)
+        {
+            foreach (EventTemplate eventCard in AddedDeckResource525.EventDeck)
+            {
+                eventList.Add(eventCard);
+
+            }
+            shuffleEventList();
+
+            AddDeckResource525 = true;
+
+        }
+
+
     }
 
     public void GenerateEventList()
