@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 
 
     public List<DeckTemplate> availableDecks;
+    public List<DeckTemplate> HotspotsDecks;
 
     public int Resource01;
     public int Resource02;
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
 
 
     public List<EventTemplate> eventList;
+    public List<EventTemplate> HotspotList;
 
 
     private bool eventSet;
@@ -113,10 +115,35 @@ public class GameManager : MonoBehaviour
     public bool AddDeckResource525;
     // boolean for recource 5 checks. Will also use them for caps.
 
+    public HotSpot hotspotScript;
     // Start is called before the first frame update
     void Start()
     {
         AddDeckResource10 = false;
+        AddDeckResource1100 = false;
+        AddDeckResource175 = false;
+        AddDeckResource125 = false;
+
+        AddDeckResource20 = false;
+        AddDeckResource2100 = false;
+        AddDeckResource275 = false;
+        AddDeckResource225 = false;
+
+        AddDeckResource30 = false;
+        AddDeckResource3100 = false;
+        AddDeckResource375 = false;
+        AddDeckResource325 = false;
+
+        AddDeckResource40 = false;
+        AddDeckResource4100 = false;
+        AddDeckResource475 = false;
+        AddDeckResource425 = false;
+
+        AddDeckResource50 = false;
+        AddDeckResource5100 = false;
+        AddDeckResource575 = false;
+        AddDeckResource525 = false;
+
         GenerateEventList();
 
         ResourceBar01Text.text = Resource01Name;
@@ -155,11 +182,12 @@ public class GameManager : MonoBehaviour
 
         }
 
-        if (!eventSet && PawnMoved)
+        /*if (!eventSet && PawnMoved)
         {
             ShowEventData();
             eventSet = true;
         }
+        */
 
 
         if (!AddDeckResource10 && Resource01 < 1)
@@ -430,6 +458,7 @@ public class GameManager : MonoBehaviour
         {
             eventList.Add(eventCard);
         }
+
        
 
         //shuffle
@@ -437,8 +466,66 @@ public class GameManager : MonoBehaviour
 
     }
 
+
+    public void PawnArrivalSpot(HotSpot Mycurrenthotspotarrived)
+    {
+        if (Mycurrenthotspotarrived.hsName == "hotspot1")
+        {
+            foreach (DeckTemplate currentDeck in HotspotsDecks)
+            {
+                if (currentDeck.DeckDescription == "hotspot1 Deck")
+                {
+                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Description;
+                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
+                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+                }
+            }
+        }
+        if (!eventSet && PawnMoved)
+        {
+            ShowEventData();
+            eventSet = true;
+        }
+
+        if (Mycurrenthotspotarrived.hsName == "hotspot2")
+        {
+            foreach (DeckTemplate currentDeck in HotspotsDecks)
+            {
+                if (currentDeck.DeckDescription == "hotspot2 Deck")
+                {
+                    // GenereateHotspotList(currentDeck);
+                     // HotspotShowData(Mycurrenthotspotarrived.progressNumber);
+                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNumber ].Description;
+                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
+                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+                }
+            }
+        }
+        if (!eventSet && PawnMoved)
+        {
+            ShowEventData();
+            eventSet = true;
+        }
+    }
+    public void GenereateHotspotList(DeckTemplate currentDeck)
+    {
+        //empty the list first?
+
+        foreach (EventTemplate eventCard in currentDeck.EventDeck)
+        {
+            HotspotList.Add(eventCard);
+        }
+    }
+    public void HotspotShowData(int progressNo)
+    {
+        MainBodyText.text = HotspotList[progressNo].Description;
+        ChoiceOneText.text = HotspotList[progressNo].Choice01;
+        ChoiceTwoText.text = HotspotList[progressNo].Choice02;
+    }
+
     public void ShowEventData()
     {
+
         if (eventList.Count < 1)
         {
             EndingText = "No More Cards!";
@@ -478,10 +565,18 @@ public class GameManager : MonoBehaviour
             Resource04 += eventList[0].Resource04_C01;
             Resource05 += eventList[0].Resource05_C01;
 
+            Resource01 += HotspotList[0].Resource01_C01;
+            Resource02 += HotspotList[0].Resource02_C01;
+            Resource03 += HotspotList[0].Resource03_C01;
+            Resource04 += HotspotList[0].Resource04_C01;
+            Resource05 += HotspotList[0].Resource05_C01;
+
             OutcomeText = eventList[0].Choice01_Outcome;
+            OutcomeText = HotspotList[0].Choice01_Outcome;
 
             showAfter = true;
         }
+
         else if(eventSet && showAfter)
         {
             // this is hidden
@@ -498,6 +593,14 @@ public class GameManager : MonoBehaviour
             Resource04 += eventList[0].Resource04_C02;
             Resource05 += eventList[0].Resource05_C02;
             OutcomeText = eventList[0].Choice02_Outcome;
+
+            Resource01 += HotspotList[0].Resource01_C02;
+            Resource02 += HotspotList[0].Resource02_C02;
+            Resource03 += HotspotList[0].Resource03_C02;
+            Resource04 += HotspotList[0].Resource04_C02;
+            Resource05 += HotspotList[0].Resource05_C02;
+
+            OutcomeText = HotspotList[0].Choice01_Outcome;
             showAfter = true;
         }
         else if (eventSet && showAfter)

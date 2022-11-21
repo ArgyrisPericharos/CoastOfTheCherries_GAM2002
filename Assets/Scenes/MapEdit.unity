@@ -470,6 +470,9 @@ MonoBehaviour:
   - {fileID: 238684971}
   - {fileID: 1132813264}
   - {fileID: 732477919}
+  hsName: hotspot2
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &228284220
 BoxCollider2D:
@@ -598,6 +601,9 @@ MonoBehaviour:
   - {fileID: 228284215}
   - {fileID: 1403419963}
   - {fileID: 1132813264}
+  hsName: hotspot6
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &238684976
 BoxCollider2D:
@@ -1464,6 +1470,9 @@ MonoBehaviour:
   - {fileID: 1066323524}
   - {fileID: 228284215}
   - {fileID: 1475453362}
+  hsName: hotpsot8
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &732477924
 BoxCollider2D:
@@ -1863,6 +1872,9 @@ MonoBehaviour:
   - {fileID: 1403419963}
   - {fileID: 1419564911}
   - {fileID: 1952916129}
+  hsName: hotspot4
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &982837863
 BoxCollider2D:
@@ -2154,6 +2166,9 @@ MonoBehaviour:
   - {fileID: 732477919}
   - {fileID: 1475453362}
   - {fileID: 1952916129}
+  hsName: hotspot1
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1066323529
 BoxCollider2D:
@@ -2492,6 +2507,9 @@ MonoBehaviour:
   Adjacent:
   - {fileID: 228284215}
   - {fileID: 238684971}
+  hsName: hotspot7
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1132813269
 BoxCollider2D:
@@ -3034,6 +3052,9 @@ MonoBehaviour:
   - {fileID: 982837858}
   - {fileID: 1419564911}
   - {fileID: 238684971}
+  hsName: hotspot3
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1403419968
 BoxCollider2D:
@@ -3162,6 +3183,9 @@ MonoBehaviour:
   - {fileID: 1403419963}
   - {fileID: 982837858}
   - {fileID: 1952916129}
+  hsName: hotspot5
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1419564916
 BoxCollider2D:
@@ -3290,6 +3314,9 @@ MonoBehaviour:
   - {fileID: 1066323524}
   - {fileID: 732477919}
   - {fileID: 1952916129}
+  hsName: hotspot9
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1475453367
 BoxCollider2D:
@@ -3498,6 +3525,7 @@ MonoBehaviour:
   availableMoves: []
   currentSelection: 0
   newHotspot: {fileID: 1066323528}
+  gameManager: {fileID: 0}
 --- !u!61 &1501500558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4450,6 +4478,9 @@ MonoBehaviour:
   - {fileID: 982837858}
   - {fileID: 1419564911}
   - {fileID: 1475453362}
+  hsName: hotspot10
+  progressNumber1: 0
+  progressNumber2: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1952916134
 BoxCollider2D:
@@ -4507,8 +4538,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starterDeck: {fileID: 11400000, guid: 6d7450f815ae61648b5ce7d78af177dc, type: 2}
-  AddedDeck: {fileID: 11400000, guid: d2d2440986a1a2d49a364ae5260e62e5, type: 2}
+  AddedDeckResource10: {fileID: 0}
+  AddedDeckResource1100: {fileID: 0}
+  AddedDeckResource175: {fileID: 0}
+  AddedDeckResource125: {fileID: 0}
+  AddedDeckResource20: {fileID: 0}
+  AddedDeckResource2100: {fileID: 0}
+  AddedDeckResource275: {fileID: 0}
+  AddedDeckResource225: {fileID: 0}
+  AddedDeckResource30: {fileID: 0}
+  AddedDeckResource3100: {fileID: 0}
+  AddedDeckResource375: {fileID: 0}
+  AddedDeckResource325: {fileID: 0}
+  AddedDeckResource40: {fileID: 0}
+  AddedDeckResource4100: {fileID: 0}
+  AddedDeckResource475: {fileID: 0}
+  AddedDeckResource425: {fileID: 0}
+  AddedDeckResource50: {fileID: 0}
+  AddedDeckResource5100: {fileID: 0}
+  AddedDeckResource575: {fileID: 0}
+  AddedDeckResource525: {fileID: 0}
   availableDecks: []
+  HotspotsDecks:
+  - {fileID: 11400000, guid: c2c8bbbf543dbe14d8aeb3027825ba78, type: 2}
+  - {fileID: 11400000, guid: 856c07c573724e946922d05659bf2c56, type: 2}
   Resource01: 50
   Resource02: 50
   Resource03: 50
@@ -4533,10 +4586,31 @@ MonoBehaviour:
   ChoiceOneText: {fileID: 2124651259}
   ChoiceTwoText: {fileID: 1212466083}
   eventList: []
+  HotspotList: []
   Choises: {fileID: 770429509}
   WordsImage: {fileID: 1691070320}
   PawnMoved: 0
-  AddDeck: 0
+  AddDeckResource10: 0
+  AddDeckResource1100: 0
+  AddDeckResource175: 0
+  AddDeckResource125: 0
+  AddDeckResource20: 0
+  AddDeckResource2100: 0
+  AddDeckResource275: 0
+  AddDeckResource225: 0
+  AddDeckResource30: 0
+  AddDeckResource3100: 0
+  AddDeckResource375: 0
+  AddDeckResource325: 0
+  AddDeckResource40: 0
+  AddDeckResource4100: 0
+  AddDeckResource475: 0
+  AddDeckResource425: 0
+  AddDeckResource50: 0
+  AddDeckResource5100: 0
+  AddDeckResource575: 0
+  AddDeckResource525: 0
+  hotspotScript: {fileID: 0}
 --- !u!4 &2006142423
 Transform:
   m_ObjectHideFlags: 0

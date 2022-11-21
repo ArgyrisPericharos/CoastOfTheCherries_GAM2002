@@ -9,7 +9,7 @@ public class PawnScript : MonoBehaviour
     public bool currentSelection;
     public HotSpot newHotspot;
     private GameObject[] allPawns;
-
+    public GameManager gameManager;
 
     private void Start()
     {
@@ -28,6 +28,7 @@ public class PawnScript : MonoBehaviour
         if (currentHotspot != newHotspot)
         {
             currentHotspot = newHotspot;
+            gameManager.PawnArrivalSpot(newHotspot);
             availableMoves = currentHotspot.getAdjacents();
         }
 
