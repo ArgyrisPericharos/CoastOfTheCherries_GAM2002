@@ -475,9 +475,9 @@ public class GameManager : MonoBehaviour
             {
                 if (currentDeck.DeckDescription == "hotspot1 Deck")
                 {
-                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Description;
-                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
-                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Description;
+                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice01;
+                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice02;
                 }
             }
         }
@@ -495,9 +495,10 @@ public class GameManager : MonoBehaviour
                 {
                     // GenereateHotspotList(currentDeck);
                      // HotspotShowData(Mycurrenthotspotarrived.progressNumber);
-                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNumber ].Description;
-                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
-                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+                     
+                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Description;
+                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice01;
+                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice02;
                 }
             }
         }
