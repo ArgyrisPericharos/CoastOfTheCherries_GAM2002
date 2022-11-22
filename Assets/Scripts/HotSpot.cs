@@ -6,7 +6,8 @@ public class HotSpot : MonoBehaviour
 {
     public GameObject[] Adjacent;
     public string hsName;
-    public int progressNo;
+    public int progressNumber;
+
     private GameObject[] Pawns;
     private GameObject currentPawn;
 
@@ -15,8 +16,6 @@ public class HotSpot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        progressNo = 0;
-
 
 
         for (int i = 0; i < Adjacent.Length; i++)
@@ -28,20 +27,7 @@ public class HotSpot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (progressNo == 1)
-        {
-            
-        }
 
-        if (progressNo == 2)
-        {
-
-        }
-
-        if (progressNo == 3)
-        {
-
-        }
         /*
         for (int i = 0; i < Pawns.Length; i++)
         {

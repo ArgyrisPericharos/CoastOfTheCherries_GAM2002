@@ -114,8 +114,11 @@ public class GameManager : MonoBehaviour
     public bool AddDeckResource575;
     public bool AddDeckResource525;
     // boolean for recource 5 checks. Will also use them for caps.
+    public bool NormalEvent;
+    public bool FixareaEvent;
 
     public HotSpot hotspotScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -151,6 +154,7 @@ public class GameManager : MonoBehaviour
         ResourceBar03Text.text = Resource03Name;
         ResourceBar04Text.text = Resource04Name;
         ResourceBar05Text.text = Resource05Name;
+
     }
 
     // Update is called once per frame
@@ -469,15 +473,21 @@ public class GameManager : MonoBehaviour
 
     public void PawnArrivalSpot(HotSpot Mycurrenthotspotarrived)
     {
+        hotspotScript = Mycurrenthotspotarrived;
         if (Mycurrenthotspotarrived.hsName == "hotspot1")
         {
+
             foreach (DeckTemplate currentDeck in HotspotsDecks)
             {
                 if (currentDeck.DeckDescription == "hotspot1 Deck")
                 {
-                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Description;
-                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice01;
-                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice02;
+                    MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
+                    ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
+                    ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+
+                    HotspotList = currentDeck.EventDeck;
+
+
                 }
             }
         }
@@ -494,11 +504,12 @@ public class GameManager : MonoBehaviour
                 if (currentDeck.DeckDescription == "hotspot2 Deck")
                 {
                     // GenereateHotspotList(currentDeck);
-                     // HotspotShowData(Mycurrenthotspotarrived.progressNumber);
+                    // HotspotShowData(Mycurrenthotspotarrived.progressNumber);
                      
-                    MainBodyText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Description;
-                    ChoiceOneText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice01;
-                    ChoiceTwoText.text = currentDeck[Mycurrenthotspotarrived.progressNo].Choice02;
+                    MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
+                    ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
+                    ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+
                 }
             }
         }
@@ -517,13 +528,13 @@ public class GameManager : MonoBehaviour
             HotspotList.Add(eventCard);
         }
     }
-    public void HotspotShowData(int progressNo)
+    /*public void HotspotShowData(int progressNumber)
     {
-        MainBodyText.text = HotspotList[progressNo].Description;
-        ChoiceOneText.text = HotspotList[progressNo].Choice01;
-        ChoiceTwoText.text = HotspotList[progressNo].Choice02;
+        MainBodyText.text = HotspotList[progressNumber].Description;
+        ChoiceOneText.text = HotspotList[progressNumber].Choice01;
+        ChoiceTwoText.text = HotspotList[progressNumber].Choice02;
     }
-
+    */
     public void ShowEventData()
     {
 
@@ -557,34 +568,28 @@ public class GameManager : MonoBehaviour
 
     public void ChooseOne()
     {
-        if(eventSet && !showAfter)
+        if((NormalEvent == true) &&(FixareaEvent == false))
         {
-            //do choice 1
-            Resource01 += eventList[0].Resource01_C01;
-            Resource02 += eventList[0].Resource02_C01;
-            Resource03 += eventList[0].Resource03_C01;
-            Resource04 += eventList[0].Resource04_C01;
-            Resource05 += eventList[0].Resource05_C01;
-
-            Resource01 += HotspotList[0].Resource01_C01;
-            Resource02 += HotspotList[0].Resource02_C01;
-            Resource03 += HotspotList[0].Resource03_C01;
-            Resource04 += HotspotList[0].Resource04_C01;
-            Resource05 += HotspotList[0].Resource05_C01;
-
-            OutcomeText = eventList[0].Choice01_Outcome;
-            OutcomeText = HotspotList[0].Choice01_Outcome;
-
-            showAfter = true;
+            ChoiceOneNorm();
         }
 
-        else if(eventSet && showAfter)
+        if ((NormalEvent == false) && (FixareaEvent == true))
         {
-            // this is hidden
+            ChoiceOneFix();
         }
+
     }
     public void ChooseTwo()
     {
+        if ((NormalEvent == true) && (FixareaEvent == false))
+        {
+            ChoiceTwoNorm();
+        }
+
+        if ((NormalEvent == false) && (FixareaEvent == true))
+        {
+            ChoiceTwoFix();
+        }
         if (eventSet && !showAfter)
         {
             //do choice 2
@@ -608,6 +613,108 @@ public class GameManager : MonoBehaviour
         {
             // this is currently an ok button
             eventList.Remove(eventList[0]);
+
+            //delete 
+            showAfter = false;
+            eventSet = false;
+            PawnMoved = false;
+
+
+        }
+    }
+
+    public void ChoiceOneNorm()
+    {
+        if (eventSet && !showAfter)
+        {
+            //do choice 1
+            Resource01 += eventList[0].Resource01_C01;
+            Resource02 += eventList[0].Resource02_C01;
+            Resource03 += eventList[0].Resource03_C01;
+            Resource04 += eventList[0].Resource04_C01;
+            Resource05 += eventList[0].Resource05_C01;
+
+
+            OutcomeText = eventList[0].Choice01_Outcome;
+
+
+            showAfter = true;
+        }
+        else if (eventSet && showAfter)
+        {
+            // this is hidden
+        }
+    }
+
+    public void ChoiceOneFix()
+    {
+   
+        if (eventSet && !showAfter)
+        {
+
+            Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C01;
+            Resource02 += HotspotList[hotspotScript.progressNumber].Resource02_C01;
+            Resource03 += HotspotList[hotspotScript.progressNumber].Resource03_C01;
+            Resource04 += HotspotList[hotspotScript.progressNumber].Resource04_C01;
+            Resource05 += HotspotList[hotspotScript.progressNumber].Resource05_C01;
+
+            OutcomeText = HotspotList[hotspotScript.progressNumber].Choice01_Outcome;
+
+            showAfter = true;
+        }
+        else if (eventSet && showAfter)
+        {
+            // this is hidden
+        }
+    }
+
+    public void ChoiceTwoNorm()
+    {
+
+        if (eventSet && !showAfter)
+        {
+            //do choice 2
+            Resource01 += eventList[0].Resource01_C02;
+            Resource02 += eventList[0].Resource02_C02;
+            Resource03 += eventList[0].Resource03_C02;
+            Resource04 += eventList[0].Resource04_C02;
+            Resource05 += eventList[0].Resource05_C02;
+            OutcomeText = eventList[0].Choice02_Outcome;
+
+            showAfter = true;
+        }
+        else if (eventSet && showAfter)
+        {
+            // this is currently an ok button
+            eventList.Remove(eventList[0]);
+
+            //delete 
+            showAfter = false;
+            eventSet = false;
+            PawnMoved = false;
+
+
+        }
+    }
+
+    public void ChoiceTwoFix()
+    {
+        if (eventSet && !showAfter)
+        {
+
+            Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C02;
+            Resource02 += HotspotList[hotspotScript.progressNumber].Resource02_C02;
+            Resource03 += HotspotList[hotspotScript.progressNumber].Resource03_C02;
+            Resource04 += HotspotList[hotspotScript.progressNumber].Resource04_C02;
+            Resource05 += HotspotList[hotspotScript.progressNumber].Resource05_C02;
+
+            OutcomeText = HotspotList[hotspotScript.progressNumber].Choice02_Outcome;
+            showAfter = true;
+        }
+        else if (eventSet && showAfter)
+        {
+            // this is currently an ok button
+            //eventList.Remove(eventList[0]);
 
             //delete 
             showAfter = false;
