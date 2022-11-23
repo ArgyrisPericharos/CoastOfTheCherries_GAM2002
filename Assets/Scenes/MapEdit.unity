@@ -471,8 +471,7 @@ MonoBehaviour:
   - {fileID: 1132813264}
   - {fileID: 732477919}
   hsName: hotspot2
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &228284220
 BoxCollider2D:
@@ -602,8 +601,7 @@ MonoBehaviour:
   - {fileID: 1403419963}
   - {fileID: 1132813264}
   hsName: hotspot6
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &238684976
 BoxCollider2D:
@@ -1471,8 +1469,7 @@ MonoBehaviour:
   - {fileID: 228284215}
   - {fileID: 1475453362}
   hsName: hotpsot8
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &732477924
 BoxCollider2D:
@@ -1873,8 +1870,7 @@ MonoBehaviour:
   - {fileID: 1419564911}
   - {fileID: 1952916129}
   hsName: hotspot4
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &982837863
 BoxCollider2D:
@@ -2167,8 +2163,7 @@ MonoBehaviour:
   - {fileID: 1475453362}
   - {fileID: 1952916129}
   hsName: hotspot1
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1066323529
 BoxCollider2D:
@@ -2508,8 +2503,7 @@ MonoBehaviour:
   - {fileID: 228284215}
   - {fileID: 238684971}
   hsName: hotspot7
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1132813269
 BoxCollider2D:
@@ -3053,8 +3047,7 @@ MonoBehaviour:
   - {fileID: 1419564911}
   - {fileID: 238684971}
   hsName: hotspot3
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1403419968
 BoxCollider2D:
@@ -3184,8 +3177,7 @@ MonoBehaviour:
   - {fileID: 982837858}
   - {fileID: 1952916129}
   hsName: hotspot5
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1419564916
 BoxCollider2D:
@@ -3315,8 +3307,7 @@ MonoBehaviour:
   - {fileID: 732477919}
   - {fileID: 1952916129}
   hsName: hotspot9
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1475453367
 BoxCollider2D:
@@ -3525,7 +3516,7 @@ MonoBehaviour:
   availableMoves: []
   currentSelection: 0
   newHotspot: {fileID: 1066323528}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 2006142422}
 --- !u!61 &1501500558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4479,8 +4470,7 @@ MonoBehaviour:
   - {fileID: 1419564911}
   - {fileID: 1475453362}
   hsName: hotspot10
-  progressNumber1: 0
-  progressNumber2: 0
+  progressNumber: 0
   gamemanager: {fileID: 2006142422}
 --- !u!61 &1952916134
 BoxCollider2D:
@@ -4610,6 +4600,8 @@ MonoBehaviour:
   AddDeckResource5100: 0
   AddDeckResource575: 0
   AddDeckResource525: 0
+  NormalEvent: 0
+  FixareaEvent: 0
   hotspotScript: {fileID: 0}
 --- !u!4 &2006142423
 Transform:

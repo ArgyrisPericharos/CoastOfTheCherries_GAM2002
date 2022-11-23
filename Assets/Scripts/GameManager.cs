@@ -476,6 +476,10 @@ public class GameManager : MonoBehaviour
         hotspotScript = Mycurrenthotspotarrived;
         if (Mycurrenthotspotarrived.hsName == "hotspot1")
         {
+            FixareaEvent = true;
+            NormalEvent = false;
+            showAfter = false;
+
 
             foreach (DeckTemplate currentDeck in HotspotsDecks)
             {
@@ -488,17 +492,25 @@ public class GameManager : MonoBehaviour
                     HotspotList = currentDeck.EventDeck;
 
 
+
                 }
             }
         }
-        if (!eventSet && PawnMoved)
+        else if (!eventSet && PawnMoved)
         {
+            NormalEvent = true;
+            FixareaEvent = false;
             ShowEventData();
             eventSet = true;
         }
 
         if (Mycurrenthotspotarrived.hsName == "hotspot2")
         {
+            FixareaEvent = true;
+            NormalEvent = false;
+            showAfter = false;
+            
+
             foreach (DeckTemplate currentDeck in HotspotsDecks)
             {
                 if (currentDeck.DeckDescription == "hotspot2 Deck")
@@ -513,8 +525,10 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        if (!eventSet && PawnMoved)
+        else if (!eventSet && PawnMoved)
         {
+            FixareaEvent = false;
+            NormalEvent = true;
             ShowEventData();
             eventSet = true;
         }
@@ -590,7 +604,7 @@ public class GameManager : MonoBehaviour
         {
             ChoiceTwoFix();
         }
-        if (eventSet && !showAfter)
+      /*  if (eventSet && !showAfter)
         {
             //do choice 2
             Resource01 += eventList[0].Resource01_C02;
@@ -621,6 +635,7 @@ public class GameManager : MonoBehaviour
 
 
         }
+      */
     }
 
     public void ChoiceOneNorm()
@@ -649,9 +664,8 @@ public class GameManager : MonoBehaviour
     public void ChoiceOneFix()
     {
    
-        if (eventSet && !showAfter)
+        if (!showAfter)
         {
-
             Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C01;
             Resource02 += HotspotList[hotspotScript.progressNumber].Resource02_C01;
             Resource03 += HotspotList[hotspotScript.progressNumber].Resource03_C01;
@@ -662,10 +676,11 @@ public class GameManager : MonoBehaviour
 
             showAfter = true;
         }
-        else if (eventSet && showAfter)
+        else if (showAfter)
         {
             // this is hidden
         }
+
     }
 
     public void ChoiceTwoNorm()
@@ -699,7 +714,7 @@ public class GameManager : MonoBehaviour
 
     public void ChoiceTwoFix()
     {
-        if (eventSet && !showAfter)
+        if (!showAfter)
         {
 
             Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C02;
@@ -711,14 +726,15 @@ public class GameManager : MonoBehaviour
             OutcomeText = HotspotList[hotspotScript.progressNumber].Choice02_Outcome;
             showAfter = true;
         }
-        else if (eventSet && showAfter)
+        else if (showAfter)
         {
             // this is currently an ok button
-            //eventList.Remove(eventList[0]);
+            //eventList.Remove(HotspotList[0]);
+            hotspotScript.GetComponent<HotSpot>().progressNumber++;
 
             //delete 
             showAfter = false;
-            eventSet = false;
+            
             PawnMoved = false;
 
 

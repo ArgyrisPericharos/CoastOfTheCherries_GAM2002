@@ -28,8 +28,9 @@ public class PawnScript : MonoBehaviour
         if (currentHotspot != newHotspot)
         {
             currentHotspot = newHotspot;
-            gameManager.PawnArrivalSpot(newHotspot);
             availableMoves = currentHotspot.getAdjacents();
+            gameManager.PawnArrivalSpot(newHotspot);
+            
         }
 
 

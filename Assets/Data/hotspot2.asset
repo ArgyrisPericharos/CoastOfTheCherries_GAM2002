@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: hotspot2
   m_EditorClassIdentifier: 
   DeckDescription: hotspot2 Deck
-  EventDeck: []
+  EventDeck:
+  - {fileID: 11400000, guid: c7713094fe4b65049bbc61e00917a996, type: 2}
+  - {fileID: 11400000, guid: 7375284acc8322f498384af573bc12ba, type: 2}
