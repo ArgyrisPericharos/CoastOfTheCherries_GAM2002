@@ -479,17 +479,26 @@ public class GameManager : MonoBehaviour
             FixareaEvent = true;
             NormalEvent = false;
             showAfter = false;
+            
 
+            ChoiceOneText.transform.parent.gameObject.SetActive(true);
 
             foreach (DeckTemplate currentDeck in HotspotsDecks)
             {
                 if (currentDeck.DeckDescription == "hotspot1 Deck")
                 {
+                    eventSet = true;
+
                     MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
                     ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
                     ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
 
-                    HotspotList = currentDeck.EventDeck;
+                    //HotspotList = currentDeck.EventDeck;
+
+                    foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                    {
+                        HotspotList.Add(eventCard);
+                    }
 
 
 
@@ -511,16 +520,26 @@ public class GameManager : MonoBehaviour
             showAfter = false;
             
 
+            ChoiceOneText.transform.parent.gameObject.SetActive(true);
+
             foreach (DeckTemplate currentDeck in HotspotsDecks)
             {
                 if (currentDeck.DeckDescription == "hotspot2 Deck")
                 {
+                    eventSet = true;
                     // GenereateHotspotList(currentDeck);
                     // HotspotShowData(Mycurrenthotspotarrived.progressNumber);
-                     
+
                     MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
                     ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
                     ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+
+                    //HotspotList = currentDeck.EventDeck;
+
+                    foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                    {
+                        HotspotList.Add(eventCard);
+                    }
 
                 }
             }
@@ -533,6 +552,7 @@ public class GameManager : MonoBehaviour
             eventSet = true;
         }
     }
+    /*
     public void GenereateHotspotList(DeckTemplate currentDeck)
     {
         //empty the list first?
@@ -542,6 +562,7 @@ public class GameManager : MonoBehaviour
             HotspotList.Add(eventCard);
         }
     }
+    */
     /*public void HotspotShowData(int progressNumber)
     {
         MainBodyText.text = HotspotList[progressNumber].Description;
@@ -604,6 +625,7 @@ public class GameManager : MonoBehaviour
         {
             ChoiceTwoFix();
         }
+
       /*  if (eventSet && !showAfter)
         {
             //do choice 2
@@ -654,6 +676,7 @@ public class GameManager : MonoBehaviour
 
 
             showAfter = true;
+            
         }
         else if (eventSet && showAfter)
         {
@@ -664,7 +687,7 @@ public class GameManager : MonoBehaviour
     public void ChoiceOneFix()
     {
    
-        if (!showAfter)
+        if (eventSet && !showAfter)
         {
             Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C01;
             Resource02 += HotspotList[hotspotScript.progressNumber].Resource02_C01;
@@ -675,8 +698,10 @@ public class GameManager : MonoBehaviour
             OutcomeText = HotspotList[hotspotScript.progressNumber].Choice01_Outcome;
 
             showAfter = true;
+            eventSet = true;
+
         }
-        else if (showAfter)
+        else if (eventSet && showAfter)
         {
             // this is hidden
         }
@@ -714,7 +739,7 @@ public class GameManager : MonoBehaviour
 
     public void ChoiceTwoFix()
     {
-        if (!showAfter)
+        if (eventSet && !showAfter)
         {
 
             Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C02;
@@ -724,7 +749,9 @@ public class GameManager : MonoBehaviour
             Resource05 += HotspotList[hotspotScript.progressNumber].Resource05_C02;
 
             OutcomeText = HotspotList[hotspotScript.progressNumber].Choice02_Outcome;
+
             showAfter = true;
+            eventSet = true;
         }
         else if (showAfter)
         {
@@ -732,10 +759,15 @@ public class GameManager : MonoBehaviour
             //eventList.Remove(HotspotList[0]);
             hotspotScript.GetComponent<HotSpot>().progressNumber++;
 
+            //remove deck from hotspotList so the deck can be reused
+
             //delete 
             showAfter = false;
-            
+            eventSet = false;
+
             PawnMoved = false;
+
+            
 
 
         }
