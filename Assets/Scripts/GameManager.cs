@@ -759,6 +759,8 @@ public class GameManager : MonoBehaviour
             //eventList.Remove(HotspotList[0]);
             hotspotScript.GetComponent<HotSpot>().progressNumber++;
 
+            //HotspotList.RemoveAll(HotspotList[null]);
+
             //remove deck from hotspotList so the deck can be reused
 
             //delete 
