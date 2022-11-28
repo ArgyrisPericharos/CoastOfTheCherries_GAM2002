@@ -16,3 +16,5 @@ MonoBehaviour:
   EventDeck:
   - {fileID: 11400000, guid: 90f01049f48ed084092294e7d64225e1, type: 2}
   - {fileID: 11400000, guid: e7e830dc8370a644fa5f3353f572256f, type: 2}
+  - {fileID: 11400000, guid: 11cacd5d27d266f4cb52b96af231333a, type: 2}
+  - {fileID: 11400000, guid: 4ed3d9f5899f277499d400f9d0902385, type: 2}
