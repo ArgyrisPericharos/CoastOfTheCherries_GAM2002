@@ -10,26 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: SomethingHappens2
+  m_Name: The Huntsman
   m_EditorClassIdentifier: 
-  Description: Somethinghappened and you have to choose option 1 or 2!
-  Choice01: option 1
-  Choice02: option 2
+  Description: A rough looking individual approaches you, trusting them seems unwise.
+  Choice01: Avoid Him
+  Choice02: Approach Him
   Choice03: null
-  Resource01_C01: 10
+  Resource01_C01: 0
   Resource01_C02: 0
   Resource02_C01: 0
-  Resource02_C02: -10
+  Resource02_C02: 0
   Resource03_C01: 0
   Resource03_C02: 0
   Resource04_C01: 0
   Resource04_C02: 0
   Resource05_C01: 0
   Resource05_C02: 0
-  Choice01_Outcome: well done
-  Choice02_Outcome: well done
+  Choice01_Outcome: He chases after you. But you managed to escape him
+  Choice02_Outcome: After a long conversation he convinced you to employ him. Hopefully
+    that wasnt a mistake.
   Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 
-  Huntsman: 0
+  Huntsman: 1
   Revolutionairy: 0

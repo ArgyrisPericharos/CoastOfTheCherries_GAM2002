@@ -10,26 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Something Else
+  m_Name: The Duel
   m_EditorClassIdentifier: 
-  Description: The description
-  Choice01: choise 1
-  Choice02: choise 2
+  Description: A revolutionairy and a royalist are dueling! The fight seems to be
+    equal.
+  Choice01: Help the royalist
+  Choice02: Help the revolutionairy
   Choice03: null
   Resource01_C01: 0
   Resource01_C02: 0
-  Resource02_C01: 10
-  Resource02_C02: -10
+  Resource02_C01: 0
+  Resource02_C02: 0
   Resource03_C01: 0
   Resource03_C02: 0
   Resource04_C01: 0
   Resource04_C02: 0
   Resource05_C01: 0
-  Resource05_C02: 0
-  Choice01_Outcome: Choise01_Outcome
-  Choice02_Outcome: Choise02_Outcome
+  Resource05_C02: 5
+  Choice01_Outcome: He gave you some coin.
+  Choice02_Outcome: His eternal gratitude is yours. And so he has agreed to join
   Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 
   Huntsman: 0
-  Revolutionairy: 0
+  Revolutionairy: 1

@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: SomethingHappensagain
+  m_Name: The Jaguar Flag
   m_EditorClassIdentifier: 
-  Description: Somethinghappened and you have to choose option 1 or 2 again!
-  Choice01: option 1
-  Choice02: option 2
+  Description: You have come across a flag of a terrible warlorld, its brand terrorising
+    the locals
+  Choice01: Destroy it
+  Choice02: Ignore it
   Choice03: null
-  Resource01_C01: 10
+  Resource01_C01: -10
   Resource01_C02: 0
   Resource02_C01: 0
-  Resource02_C02: 0
+  Resource02_C02: -5
   Resource03_C01: 0
-  Resource03_C02: -10
+  Resource03_C02: 0
   Resource04_C01: 0
-  Resource04_C02: -10
+  Resource04_C02: 0
   Resource05_C01: 0
   Resource05_C02: 0
-  Choice01_Outcome: well done
-  Choice02_Outcome: well done
+  Choice01_Outcome: Make love, not war!
+  Choice02_Outcome: The world's problems arent always ours to solve.
   Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 

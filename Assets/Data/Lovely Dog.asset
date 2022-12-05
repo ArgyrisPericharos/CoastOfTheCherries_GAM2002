@@ -17,18 +17,18 @@ MonoBehaviour:
   Choice01: Pet it anyway!
   Choice02: Call to the owner
   Choice03: null
-  Resource01_C01: 0
-  Resource01_C02: 0
-  Resource02_C01: 10
-  Resource02_C02: -10
+  Resource01_C01: -5
+  Resource01_C02: -10
+  Resource02_C01: 0
+  Resource02_C02: 0
   Resource03_C01: 0
   Resource03_C02: 0
   Resource04_C01: 0
   Resource04_C02: 0
   Resource05_C01: 0
   Resource05_C02: 0
-  Choice01_Outcome: Choice01_Outcome
-  Choice02_Outcome: Choice02_Outcome
+  Choice01_Outcome: What a lovely dog!
+  Choice02_Outcome: The owner appreciated you asked before petting!
   Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 
