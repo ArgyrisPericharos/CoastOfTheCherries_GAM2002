@@ -15,6 +15,7 @@ MonoBehaviour:
   Description: Somethinghappened and you have to choose option 1 or 2!
   Choice01: option 1
   Choice02: option 2
+  Choice03: null
   Resource01_C01: 10
   Resource01_C02: 0
   Resource02_C01: 0
@@ -27,5 +28,8 @@ MonoBehaviour:
   Resource05_C02: 0
   Choice01_Outcome: well done
   Choice02_Outcome: well done
+  Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

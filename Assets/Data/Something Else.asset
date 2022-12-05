@@ -15,6 +15,7 @@ MonoBehaviour:
   Description: The description
   Choice01: choise 1
   Choice02: choise 2
+  Choice03: null
   Resource01_C01: 0
   Resource01_C02: 0
   Resource02_C01: 10
@@ -27,5 +28,8 @@ MonoBehaviour:
   Resource05_C02: 0
   Choice01_Outcome: Choise01_Outcome
   Choice02_Outcome: Choise02_Outcome
+  Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

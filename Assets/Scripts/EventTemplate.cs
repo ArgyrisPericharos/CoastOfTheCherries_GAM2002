@@ -7,6 +7,7 @@ public class EventTemplate : ScriptableObject
     public string Description;
     public string Choice01;
     public string Choice02;
+    public string Choice03;
 
     public int Resource01_C01;
     public int Resource01_C02;
@@ -21,9 +22,13 @@ public class EventTemplate : ScriptableObject
 
     public string Choice01_Outcome;
     public string Choice02_Outcome;
+    public string Choice03_Outcome;
 
     public string Choice01_Special;
     public string Choice02_Special;
+
+    public bool Huntsman;
+    public bool Revolutionairy;
 
 
     // Start is called before the first frame update

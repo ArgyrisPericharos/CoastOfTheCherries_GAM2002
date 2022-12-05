@@ -10,26 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Lovely Dog
+  m_Name: Hotspot 5 first event
   m_EditorClassIdentifier: 
-  Description: You see a lovely dog but it's owner is very nervous and doesn't want
-    anyone interacting with their dog.
-  Choice01: Pet it anyway!
-  Choice02: Call to the owner
-  Choice03: null
+  Description: This is an event for hotspot 5 with 3 choices
+  Choice01: yes
+  Choice02: 'no '
+  Choice03: maybe???
   Resource01_C01: 0
   Resource01_C02: 0
-  Resource02_C01: 10
-  Resource02_C02: -10
+  Resource02_C01: 0
+  Resource02_C02: 0
   Resource03_C01: 0
   Resource03_C02: 0
-  Resource04_C01: 0
+  Resource04_C01: -1
   Resource04_C02: 0
   Resource05_C01: 0
-  Resource05_C02: 0
-  Choice01_Outcome: Choice01_Outcome
-  Choice02_Outcome: Choice02_Outcome
-  Choice03_Outcome: null
+  Resource05_C02: -1
+  Choice01_Outcome: yes
+  Choice02_Outcome: no
+  Choice03_Outcome: Maybe??????
   Choice01_Special: 
   Choice02_Special: 
   Huntsman: 0
