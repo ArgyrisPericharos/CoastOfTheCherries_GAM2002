@@ -29,6 +29,7 @@ MonoBehaviour:
   Resource05_C02: 5
   Choice01_Outcome: He gave you some coin.
   Choice02_Outcome: His eternal gratitude is yours. And so he has agreed to join
+    your party.
   Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 

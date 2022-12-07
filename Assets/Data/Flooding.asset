@@ -10,27 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: The Huntsman
+  m_Name: Flooding
   m_EditorClassIdentifier: 
-  Description: A rough looking individual approaches you, trusting them seems unwise.
-  Choice01: Avoid Him
-  Choice02: Approach Him
+  Description: You have come across a flooded village. The locals ask you for help.
+  Choice01: Help them out.
+  Choice02: Ignore them.
   Choice03: null
   Resource01_C01: 0
   Resource01_C02: 0
-  Resource02_C01: 0
-  Resource02_C02: 0
+  Resource02_C01: 10
+  Resource02_C02: -10
   Resource03_C01: 0
   Resource03_C02: 0
   Resource04_C01: 0
   Resource04_C02: 0
-  Resource05_C01: 0
+  Resource05_C01: -5
   Resource05_C02: 0
-  Choice01_Outcome: He chases after you. But you managed to escape him.
-  Choice02_Outcome: After a long conversation he convinced you to employ him. Hopefully
-    that wasnt a mistake.
-  Choice03_Outcome: null
+  Choice01_Outcome: 
+  Choice02_Outcome: 
+  Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 
-  Huntsman: 1
+  Huntsman: 0
   Revolutionairy: 0
