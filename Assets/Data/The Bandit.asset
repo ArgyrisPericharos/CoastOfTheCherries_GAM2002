@@ -10,25 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Hotspo2event2
+  m_Name: The Bandit
   m_EditorClassIdentifier: 
-  Description: this is the second event of the h2
-  Choice01: do this
-  Choice02: do that
-  Choice03: null
-  Resource01_C01: 0
-  Resource01_C02: 0
-  Resource02_C01: 0
+  Description: 'A Bandit approaches you. Tatered uniform, rough beard and blood in
+    his hands. He opens a bag full of loot and drops it by your feet. "Hommage" he
+    says. (tribute) '
+  Choice01: Honour him
+  Choice02: Aggrevate him.
+  Choice03: 
+  Resource01_C01: 5
+  Resource01_C02: 10
+  Resource02_C01: -5
   Resource02_C02: 0
-  Resource03_C01: 10
-  Resource03_C02: -10
+  Resource03_C01: 0
+  Resource03_C02: 0
   Resource04_C01: 0
   Resource04_C02: 0
-  Resource05_C01: 0
-  Resource05_C02: 0
-  Choice01_Outcome: you did this
-  Choice02_Outcome: you did that
-  Choice03_Outcome: null
+  Resource05_C01: 5
+  Resource05_C02: -5
+  Choice01_Outcome: 
+  Choice02_Outcome: 
+  Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 
   Huntsman: 0

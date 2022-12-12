@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Constable
+  m_EditorClassIdentifier: 
+  Description: An army's constable has tracked you down. He wants to arrest you.
+    Its a stand off in the streets! Your band of brigands versus the army.
+  Choice01: Duel the constable.
+  Choice02: Engage them as a group.
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 0
+  Resource02_C01: 10
+  Resource02_C02: 5
+  Resource03_C01: 5
+  Resource03_C02: -10
+  Resource04_C01: -10
+  Resource04_C02: -5
+  Resource05_C01: 0
+  Resource05_C02: 0
+  Choice01_Outcome: The duel starts! You both draw your swords and they cling in
+    the air as they strike! The townsfolk look in awe! its an even match until the
+    constable tires, his attacks are overanimated and slow. You find an openijng
+    through his guard and deal a destructive blow! Victoire! The army withdraws.
+  Choice02_Outcome: 'You shout at the top of your lungs: "Charge!". The fight commences.
+    Smoke and fire in the air as the first blades are struck. But is an unmatched
+    battle. The army''s discipline and experience is too much for your men to deal
+    with. In the chaos of the battle you see the chance to escape!'
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

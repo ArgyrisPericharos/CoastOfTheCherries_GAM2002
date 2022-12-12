@@ -10,25 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Hotspo2event1
+  m_Name: Useless
   m_EditorClassIdentifier: 
-  Description: this is the first event of the h2
-  Choice01: do this
-  Choice02: do that
-  Choice03: null
-  Resource01_C01: 10
-  Resource01_C02: -10
+  Description: As you are travelling a woung peasant woman comes up to you and addresses
+    you as useless. You have never seen her before.
+  Choice01: Ignore her.
+  Choice02: Draw your sword.
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 0
   Resource02_C01: 0
   Resource02_C02: 0
-  Resource03_C01: 0
-  Resource03_C02: 0
+  Resource03_C01: -10
+  Resource03_C02: -15
   Resource04_C01: 0
   Resource04_C02: 0
   Resource05_C01: 0
   Resource05_C02: 0
-  Choice01_Outcome: you did this
-  Choice02_Outcome: you did that
-  Choice03_Outcome: null
+  Choice01_Outcome: What do people know anyways?
+  Choice02_Outcome: The sword gets stuck in its scabbard causeing you to fall off
+    your horse.
+  Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 
   Huntsman: 0

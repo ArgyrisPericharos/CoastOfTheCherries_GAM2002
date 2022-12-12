@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Hoodlums
+  m_EditorClassIdentifier: 
+  Description: As you walk down the street a banch of hoodlums surround and your
+    party. Clearly drunk they are making a mockery of you and are touching your stuff.
+  Choice01: Drive them away.
+  Choice02: Ignore them.
+  Choice03: 
+  Resource01_C01: -10
+  Resource01_C02: -10
+  Resource02_C01: 0
+  Resource02_C02: 0
+  Resource03_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: 0
+  Resource04_C02: 0
+  Resource05_C01: -5
+  Resource05_C02: -10
+  Choice01_Outcome: It didnt seem to work. It wasnt long before your followers dealt
+    with it by drawing they swords and readying their rifles. They killed a bunch
+    of drunk peasant to solve the problem.
+  Choice02_Outcome: You did, but it didnt seem to work? They still making a nuisance
+    of themselves. It wasnt long before your followers drew their swords and readied
+    their rifles. A few drunk peasants had to die for the problem to be solved.
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

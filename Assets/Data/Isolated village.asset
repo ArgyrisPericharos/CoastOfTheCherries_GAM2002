@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Isolated village
+  m_EditorClassIdentifier: 
+  Description: You have come across village pretty isolated from the rest of the
+    world, your followers wanting to hunt and advice you to raid the village.
+  Choice01: Raid.
+  Choice02: Keep Moving.
+  Choice03: 
+  Resource01_C01: 15
+  Resource01_C02: 0
+  Resource02_C01: 0
+  Resource02_C02: 5
+  Resource03_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: -10
+  Resource04_C02: 0
+  Resource05_C01: 5
+  Resource05_C02: -10
+  Choice01_Outcome: L'horreur! Your men act like beasts! What a terrible misfortune
+    these people have endured!
+  Choice02_Outcome: Your party is rallying against you! This action has angered them
+    a lot! But it was the right choise.
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

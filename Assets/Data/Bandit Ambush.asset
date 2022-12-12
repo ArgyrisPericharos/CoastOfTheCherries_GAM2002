@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Bandit Ambush
+  m_EditorClassIdentifier: 
+  Description: You and your partyis ambushed! Its a bandit group that has been specifically
+    looking for you. They hate competition.
+  Choice01: We are surrounded! Defensive positions!
+  Choice02: Charge the enemy!
+  Choice03: 
+  Resource01_C01: 15
+  Resource01_C02: 5
+  Resource02_C01: 0
+  Resource02_C02: -5
+  Resource03_C01: 5
+  Resource03_C02: 0
+  Resource04_C01: 5
+  Resource04_C02: 0
+  Resource05_C01: -10
+  Resource05_C02: -15
+  Choice01_Outcome: The bandits are hard on their attack but unable to breakthrough.
+    A battle of attrition! You and your men survive in the end but not without losses.
+  Choice02_Outcome: A foolhardy decision but the battle ends quickly. A phyrric victory
+    however with many dead.
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

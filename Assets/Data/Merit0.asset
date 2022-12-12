@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebba3d5ccbe0c5145b344dbb6a3b8bc9, type: 3}
-  m_Name: hotspot1
+  m_Name: Merit0
   m_EditorClassIdentifier: 
-  DeckDescription: hotspot1 deck
+  DeckDescription: merit 0 deck
   EventDeck:
-  - {fileID: 11400000, guid: fe5e5e3b4acf6054aa956e3d1c56146c, type: 2}
-  - {fileID: 11400000, guid: 951ca1e8882da4b409c5c1c6cdcf2c68, type: 2}
+  - {fileID: 11400000, guid: 8bbe4c108f60c0d4095133d6c9677a39, type: 2}
+  - {fileID: 11400000, guid: 86c61eb442674124685ebbbd4a8f4dab, type: 2}

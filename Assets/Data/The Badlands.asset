@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: The Badlands
+  m_EditorClassIdentifier: 
+  Description: The terriotry of Jaguar. A complete anarchist state in our country.
+    We have to tread carefully here.
+  Choice01: Go forth
+  Choice02: Explore the Borders.
+  Choice03: Leave
+  Resource01_C01: 10
+  Resource01_C02: 0
+  Resource02_C01: 0
+  Resource02_C02: 10
+  Resource03_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: 0
+  Resource04_C02: 0
+  Resource05_C01: 0
+  Resource05_C02: 0
+  Choice01_Outcome: Badland country is grim, dry and mostly dead. You see the occational
+    rotten corpse in the roads and the run down houses. And ofcourse the flags and
+    insignia of the Jaguar warlord.
+  Choice02_Outcome: You get approached by a bandit gun readied. He warns if you come
+    closer he will shoot. One of your followers however shoots him before he could
+    utter another word.
+  Choice03_Outcome: 'Maybe we can come back at another time. '
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

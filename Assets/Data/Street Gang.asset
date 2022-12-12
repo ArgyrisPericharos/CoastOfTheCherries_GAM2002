@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Street Gang
+  m_EditorClassIdentifier: 
+  Description: As you stroll this town's streets you come across a Gang's hideout.They
+    see you and know of you. They treat you with respect. They tell you of their
+    interconnected network of other gangs across the country but they need a leader
+    and a name to encompass fear to everyone against them.
+  Choice01: Give them a name.
+  Choice02: Use your name.
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 0
+  Resource02_C01: 5
+  Resource02_C02: 5
+  Resource03_C01: -5
+  Resource03_C02: -5
+  Resource04_C01: -10
+  Resource04_C02: -20
+  Resource05_C01: 0
+  Resource05_C02: 5
+  Choice01_Outcome: The terrible name you have given them has strucken fear to everyone
+    in the country!
+  Choice02_Outcome: 'People for days to come will know who you are and what you are.
+    You will even take credit for crimes you never commmited! '
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Cherries of Love
+  m_EditorClassIdentifier: 
+  Description: You have come across a town thats currently celebrating the festival
+    of the cheerries. A festival were people get together dance, sing, feast and
+    make love.
+  Choice01: Donate to the festival.
+  Choice02: Spend the night and part-take
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 0
+  Resource02_C01: 5
+  Resource02_C02: 5
+  Resource03_C01: 0
+  Resource03_C02: -5
+  Resource04_C01: 5
+  Resource04_C02: 5
+  Resource05_C01: -5
+  Resource05_C02: 0
+  Choice01_Outcome: Love will overcome it all in the end!
+  Choice02_Outcome: Sometimes the soul must be released free!
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

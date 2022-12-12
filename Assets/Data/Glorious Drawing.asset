@@ -10,25 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Hotspot 5 first event
+  m_Name: Glorious Drawing
   m_EditorClassIdentifier: 
-  Description: This is an event for hotspot 5 with 3 choices
-  Choice01: yes
-  Choice02: 'no '
-  Choice03: maybe???
-  Resource01_C01: 0
-  Resource01_C02: 0
+  Description: A famous painter has wished to draw a portrait of yours, and added
+    to his famous collection.
+  Choice01: Portrait by the Mountains.
+  Choice02: Portrait by the sea.
+  Choice03: 
+  Resource01_C01: -10
+  Resource01_C02: -10
   Resource02_C01: 0
-  Resource02_C02: 0
-  Resource03_C01: 0
+  Resource02_C02: 5
+  Resource03_C01: 5
   Resource03_C02: 0
-  Resource04_C01: -1
+  Resource04_C01: 0
   Resource04_C02: 0
   Resource05_C01: 0
-  Resource05_C02: -1
-  Choice01_Outcome: yes
-  Choice02_Outcome: no
-  Choice03_Outcome: Maybe??????
+  Resource05_C02: 0
+  Choice01_Outcome: What a beautiful portrait!
+  Choice02_Outcome: What a beautiful portrait!
+  Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 
   Huntsman: 0

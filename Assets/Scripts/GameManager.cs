@@ -73,6 +73,14 @@ public class GameManager : MonoBehaviour
     public bool Huntsman;
     public bool Revolutionairy;
 
+    public bool HuntsmanCheck;
+    public bool RevoCheck;
+
+    public GameObject RevoPrefab;
+    public GameObject HuntsPrefab;
+
+    public Transform SpawnPosition;
+
 
     public List<EventTemplate> eventList;
     public List<EventTemplate> HotspotList;
@@ -129,6 +137,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+         
+        Huntsman = false;
+        Revolutionairy = false;
+        
+        HuntsmanCheck = true;
+        RevoCheck = true;
+
         AddDeckResource10 = false;
         AddDeckResource1100 = false;
         AddDeckResource175 = false;
@@ -452,6 +467,19 @@ public class GameManager : MonoBehaviour
 
         }
 
+        if ((Revolutionairy == true) && (RevoCheck == true)) 
+        {
+            Instantiate(RevoPrefab, SpawnPosition);
+            RevoPrefab.transform.position = SpawnPosition.transform.position;
+            RevoCheck = false;
+        }
+
+        if ((Huntsman == true) && (HuntsmanCheck == true)) 
+        {
+            Instantiate(HuntsPrefab, SpawnPosition);
+            HuntsPrefab.transform.position = SpawnPosition.transform.position;
+            HuntsmanCheck = false;
+        }
 
     }
 
@@ -786,7 +814,7 @@ public class GameManager : MonoBehaviour
     public void ChoiceOneFor5()
     {
 
-        if (eventSet && !showAfter)
+        if ((eventSet && !showAfter) && (Resource01 >= 75))
         {
             Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C01;
             Resource02 += HotspotList[hotspotScript.progressNumber].Resource02_C01;
@@ -885,7 +913,7 @@ public class GameManager : MonoBehaviour
 
     public void ChoiceTwoFor5()
     {
-        if (eventSet && !showAfter)
+        if ((eventSet && !showAfter) && (Resource02 >= 75))
         {
 
             Resource01 += HotspotList[hotspotScript.progressNumber].Resource01_C02;

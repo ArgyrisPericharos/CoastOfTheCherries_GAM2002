@@ -15,3 +15,4 @@ MonoBehaviour:
   DeckDescription: hotspot5 Deck
   EventDeck:
   - {fileID: 11400000, guid: 033e0171d1aa0004280b8cd5397d75df, type: 2}
+  - {fileID: 11400000, guid: 25a35ffd29344c94a9a322755487da79, type: 2}
