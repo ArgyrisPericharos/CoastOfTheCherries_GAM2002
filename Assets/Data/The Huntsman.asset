@@ -28,7 +28,7 @@ MonoBehaviour:
   Resource05_C02: 0
   Choice01_Outcome: He chases after you. But you managed to escape him.
   Choice02_Outcome: After a long conversation he convinced you to employ him. Hopefully
-    that wasnt a mistake.
+    that wasnt a mistake.(Huntsman pawn joins you)
   Choice03_Outcome: null
   Choice01_Special: 
   Choice02_Special: 

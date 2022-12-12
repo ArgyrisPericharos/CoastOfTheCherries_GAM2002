@@ -10,28 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: The Duel
+  m_Name: Pyromaniac
   m_EditorClassIdentifier: 
-  Description: A revolutionairy and a royalist are dueling! The fight seems to be
-    equal.
-  Choice01: Help the royalist
-  Choice02: Help the revolutionairy
-  Choice03: null
-  Resource01_C01: 0
-  Resource01_C02: 0
+  Description: 'You find a pack of newly invented matchsticks at the village you
+    are at. You love them! '
+  Choice01: Burn the village down
+  Choice02: Burn the people alive
+  Choice03: 
+  Resource01_C01: 5
+  Resource01_C02: 10
   Resource02_C01: 0
   Resource02_C02: 0
   Resource03_C01: 0
   Resource03_C02: 0
-  Resource04_C01: 0
-  Resource04_C02: 0
+  Resource04_C01: -10
+  Resource04_C02: -10
   Resource05_C01: 0
   Resource05_C02: 5
-  Choice01_Outcome: He gave you some coin.
-  Choice02_Outcome: His eternal gratitude is yours. And so he has agreed to join
-    your party.(Revolutionairy pawn joins you)
-  Choice03_Outcome: null
+  Choice01_Outcome: The smoke and fire can be seen from miles away.
+  Choice02_Outcome: What a gruesome view.
+  Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 
   Huntsman: 0
-  Revolutionairy: 1
+  Revolutionairy: 0

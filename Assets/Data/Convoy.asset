@@ -10,26 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Skrimish
+  m_Name: Convoy
   m_EditorClassIdentifier: 
-  Description: You have come across a littered battlefield with the dead. A grim
-    view. You se a soldier seriously wounded and near death.
-  Choice01: Try to help him.
-  Choice02: Leave him to his fate.
+  Description: You have come across a prisoner convoy as you venture. The man inside
+    is well dressed and looks like a royalist and as he sees you he shouts for your
+    help.
+  Choice01: Free the prisoner.
+  Choice02: Ignore.
   Choice03: 
   Resource01_C01: 0
-  Resource01_C02: 0
-  Resource02_C01: 0
+  Resource01_C02: -5
+  Resource02_C01: 5
   Resource02_C02: -5
   Resource03_C01: 0
-  Resource03_C02: -5
-  Resource04_C01: 5
+  Resource03_C02: 0
+  Resource04_C01: -10
   Resource04_C02: 0
-  Resource05_C01: 0
+  Resource05_C01: 5
   Resource05_C02: 0
-  Choice01_Outcome: 'He died in your arms but not before uttering the words: "La
-    Jaguar erre librement". (The Jaguar roams free)'
-  Choice02_Outcome: There wasnt much you could do for him.
+  Choice01_Outcome: After a quick fight with the guards, you release the prisoner.
+    He rewards you and then he is on his way.
+  Choice02_Outcome: He was probably executed.
   Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 

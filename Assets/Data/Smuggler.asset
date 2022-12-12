@@ -10,26 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Skrimish
+  m_Name: Smuggler
   m_EditorClassIdentifier: 
-  Description: You have come across a littered battlefield with the dead. A grim
-    view. You se a soldier seriously wounded and near death.
-  Choice01: Try to help him.
-  Choice02: Leave him to his fate.
+  Description: A smuggler working for a terrifying pirate lord has been caught by
+    some guards. He seems like a fellow in need of help.
+  Choice01: Help him
+  Choice02: Leave him
   Choice03: 
   Resource01_C01: 0
-  Resource01_C02: 0
-  Resource02_C01: 0
+  Resource01_C02: -5
+  Resource02_C01: 5
   Resource02_C02: -5
   Resource03_C01: 0
-  Resource03_C02: -5
-  Resource04_C01: 5
-  Resource04_C02: 0
-  Resource05_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: -15
+  Resource04_C02: -5
+  Resource05_C01: 5
   Resource05_C02: 0
-  Choice01_Outcome: 'He died in your arms but not before uttering the words: "La
-    Jaguar erre librement". (The Jaguar roams free)'
-  Choice02_Outcome: There wasnt much you could do for him.
+  Choice01_Outcome: You and a couple of followers sneak him away when the guards
+    are changing shifts. He thanks you and promises to put in a good word with the
+    pirate lord.
+  Choice02_Outcome: We cant afford to be caught by the law.
   Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 

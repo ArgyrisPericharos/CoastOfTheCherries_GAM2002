@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Kidsone
+  m_Name: Whisperers
   m_EditorClassIdentifier: 
-  Description: A group of school children approach you, and while a couple of them
-    talk to you another two steal your wallet. Then they run away.
-  Choice01: Run after the kids.
-  Choice02: Report the kids.
-  Choice03: null
+  Description: There seems to be a lot of mischeavious characters that are willing
+    to do your dirty biding in every corner of our world.
+  Choice01: The "Whisperers"
+  Choice02: They are just a tool!
+  Choice03: 
   Resource01_C01: 5
-  Resource01_C02: -5
+  Resource01_C02: 10
   Resource02_C01: -5
   Resource02_C02: -5
-  Resource03_C01: -10
-  Resource03_C02: -5
-  Resource04_C01: 0
-  Resource04_C02: 0
+  Resource03_C01: -5
+  Resource03_C02: 5
+  Resource04_C01: -10
+  Resource04_C02: -5
   Resource05_C01: 0
   Resource05_C02: 0
-  Choice01_Outcome: You did not catch them.
-  Choice02_Outcome: No one seemed to care. They are only children.
-  Choice03_Outcome: null
+  Choice01_Outcome: A terrible name for a terrible network!
+  Choice02_Outcome: And thats what the'll remain.
+  Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 
   Huntsman: 0

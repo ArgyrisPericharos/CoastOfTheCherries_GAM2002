@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Royal Coup
+  m_EditorClassIdentifier: 
+  Description: You have uncovered an inflitration in the army! Royalist plotting
+    to overthrow via a military coup the current political structure with the aid
+    of a foreign nation.
+  Choice01: Assasinate them and cover it up.
+  Choice02: Turn them to the army.
+  Choice03: 
+  Resource01_C01: 5
+  Resource01_C02: -5
+  Resource02_C01: 10
+  Resource02_C02: 10
+  Resource03_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: 0
+  Resource04_C02: 5
+  Resource05_C01: -5
+  Resource05_C02: 0
+  Choice01_Outcome: These news could destabilise  as to the bitter end. We end this
+    quickly and quietly!
+  Choice02_Outcome: Nouvelle Choquant! (Shocking news) This revelation will rock
+    the foundation of our world!
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

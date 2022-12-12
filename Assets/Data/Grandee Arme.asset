@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Grandee Arme
+  m_EditorClassIdentifier: 
+  Description: The army is reforming Proffesionalism will soon take part and it will
+    mean less stability in the coast. Doesnt seem to be in our intrest.
+  Choice01: Incite revolts in the camps.
+  Choice02: Gain favour with the Army
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 5
+  Resource02_C01: 5
+  Resource02_C02: 10
+  Resource03_C01: -10
+  Resource03_C02: -10
+  Resource04_C01: 0
+  Resource04_C02: 0
+  Resource05_C01: 0
+  Resource05_C02: 0
+  Choice01_Outcome: It seems to have worked. Whispers into soldiersears have convinced
+    them that this reform isnt in their benefit. The camps are revolting and the
+    soldiers are chanting "La revolution restera" (the revolution will stay)"
+  Choice02_Outcome: Reform or not, an agent of chaos is allways a useful friend.
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

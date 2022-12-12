@@ -2627,6 +2627,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 2006142422}
+    - target: {fileID: 5908014860759161235, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: currentHotspot
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
 --- !u!1 &1130121284
@@ -3856,7 +3860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501500552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6, y: 2.69, z: 0.036356308}
+  m_LocalPosition: {x: 1.79, y: 1.11, z: 0.036356308}
   m_LocalScale: {x: 0.5757, y: 0.5514, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3878,7 +3882,7 @@ MonoBehaviour:
   currentHotspot: {fileID: 0}
   availableMoves: []
   currentSelection: 0
-  newHotspot: {fileID: 1066323528}
+  newHotspot: {fileID: 1475453366}
   gameManager: {fileID: 2006142422}
 --- !u!61 &1501500558
 BoxCollider2D:
@@ -4081,11 +4085,15 @@ PrefabInstance:
     - target: {fileID: 5229455238069840873, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
       propertyPath: newHotspot
       value: 
-      objectReference: {fileID: 1066323528}
+      objectReference: {fileID: 228284219}
     - target: {fileID: 5229455238069840873, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 2006142422}
+    - target: {fileID: 5229455238069840873, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: currentHotspot
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4950,23 +4958,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520c6af9f7bd1934ebaeeb8b4bfefe89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ValuesScreen: {fileID: 100409735}
   starterDeck: {fileID: 11400000, guid: 6d7450f815ae61648b5ce7d78af177dc, type: 2}
   AddedDeckResource10: {fileID: 11400000, guid: d85bd8c499daa424a9368218cdd3cbbb, type: 2}
   AddedDeckResource1100: {fileID: 11400000, guid: 26341b6ace438be418bf86941db8d912, type: 2}
   AddedDeckResource175: {fileID: 11400000, guid: d27edf2ab2721b14cb256f160e4ada21, type: 2}
   AddedDeckResource125: {fileID: 11400000, guid: 6999b8928a87945418b4c1cc3f9b3477, type: 2}
   AddedDeckResource20: {fileID: 11400000, guid: 980e5420e5f0c8446b7dceafd6571878, type: 2}
-  AddedDeckResource2100: {fileID: 0}
-  AddedDeckResource275: {fileID: 0}
+  AddedDeckResource2100: {fileID: 11400000, guid: 63afe707aad54eb4ab3e73b4387ae967, type: 2}
+  AddedDeckResource275: {fileID: 11400000, guid: 5e5e5fff77c23544ca5337803578eed5, type: 2}
   AddedDeckResource225: {fileID: 11400000, guid: 28cfe461bf85ad549b27fb83172f974a, type: 2}
-  AddedDeckResource30: {fileID: 0}
-  AddedDeckResource3100: {fileID: 0}
-  AddedDeckResource375: {fileID: 0}
-  AddedDeckResource325: {fileID: 0}
-  AddedDeckResource40: {fileID: 0}
-  AddedDeckResource4100: {fileID: 0}
-  AddedDeckResource475: {fileID: 0}
-  AddedDeckResource425: {fileID: 0}
+  AddedDeckResource30: {fileID: 11400000, guid: 794921bcb8d1e4e4f9e8586fb72b223b, type: 2}
+  AddedDeckResource3100: {fileID: 11400000, guid: 11bc0ff1920ae7040b70b67d1a88f657, type: 2}
+  AddedDeckResource375: {fileID: 11400000, guid: c564a29654572f346a7ab72f16a95f51, type: 2}
+  AddedDeckResource325: {fileID: 11400000, guid: c21a8909b57680c4ca6b764b65d4895e, type: 2}
+  AddedDeckResource40: {fileID: 11400000, guid: 47b2ab4e61f95d54b9dae6dc7b33a86d, type: 2}
+  AddedDeckResource4100: {fileID: 11400000, guid: 8859e415c721e7b4b9e308b6a30fb9b2, type: 2}
+  AddedDeckResource475: {fileID: 11400000, guid: 6f7bad700e59026428cffc7d86c4f6c7, type: 2}
+  AddedDeckResource425: {fileID: 11400000, guid: 8e2ea957e597b99409151e3dd0e66004, type: 2}
   AddedDeckResource50: {fileID: 0}
   AddedDeckResource5100: {fileID: 0}
   AddedDeckResource575: {fileID: 0}
@@ -5037,6 +5046,8 @@ MonoBehaviour:
   hotspotScript: {fileID: 0}
   HotSpot5event: 0
   savedforlaterfor5: 0
+  RevoMovement: 0
+  HuntsMovement: 0
 --- !u!4 &2006142423
 Transform:
   m_ObjectHideFlags: 0

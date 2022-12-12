@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
   m_Name: Kidstwo
   m_EditorClassIdentifier: 
-  Description: You see the kids that previously robed you again and you deecide to
-    approach them.
+  Description: You see the kids that previously robbed you again and you deecide
+    to approach them.
   Choice01: Try and catch them.
   Choice02: Approach them bearing no aggression.
   Choice03: null
@@ -28,7 +28,7 @@ MonoBehaviour:
   Resource05_C01: 0
   Resource05_C02: 0
   Choice01_Outcome: They seem too nimble for you, never stood a chance.
-  Choice02_Outcome: They uphold of your choice! These kids listen to you like a teacher,
+  Choice02_Outcome: They uphold your choice! These kids listen to you like a teacher,
     maybe they will even learn for you.
   Choice03_Outcome: null
   Choice01_Special: 

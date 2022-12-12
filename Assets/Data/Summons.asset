@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Summons
+  m_EditorClassIdentifier: 
+  Description: A young and promising general of the revolutionairy army has summoned
+    you. One of the fastest promoted officers that started off as an artillery officer.
+  Choice01: Answer the Summons.
+  Choice02: Ignore the call.
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 0
+  Resource02_C01: 5
+  Resource02_C02: 0
+  Resource03_C01: 5
+  Resource03_C02: -15
+  Resource04_C01: 5
+  Resource04_C02: -20
+  Resource05_C01: -10
+  Resource05_C02: 0
+  Choice01_Outcome: At the summons he explains to you he is currently plaed a campaign
+    for the Badlands to attack and detain the legendary warlord Jaguar and bring
+    him to justice. But he asks you for help as prominent "Hero" of our world. No
+    one could ever deny sucha title or refuse such a man!
+  Choice02_Outcome: "Blasph\xE8me! No honourable gentleman would every deny the call
+    of the revolutionairy army! Men have been hanged for less!"
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

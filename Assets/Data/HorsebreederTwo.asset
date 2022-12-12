@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HorsebreederTwo
   m_EditorClassIdentifier: 
   Description: You have arrived at the Horsebreeder's. What will you buy?
-  Choice01: Beautiful Stalion
+  Choice01: Beautiful Stallion
   Choice02: The camel
   Choice03: 
   Resource01_C01: -5

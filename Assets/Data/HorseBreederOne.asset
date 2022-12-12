@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: You have reached a fine horsebreeder. He asks you what horse you want
     to purcchase.
-  Choice01: Strong Stalion
-  Choice02: Fast Stalion
+  Choice01: Strong Stallion
+  Choice02: Fast Stallion
   Choice03: null
   Resource01_C01: 0
   Resource01_C02: 0

@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Skrimish
+  m_Name: Funny Buisness
   m_EditorClassIdentifier: 
-  Description: You have come across a littered battlefield with the dead. A grim
-    view. You se a soldier seriously wounded and near death.
-  Choice01: Try to help him.
-  Choice02: Leave him to his fate.
+  Description: You happen to stumble across some curious looking mushrooms in a forest.
+    You obviously pick them.
+  Choice01: Eat the mushrooms and fight the weird creatures that magically appeared
+    in front of you.
+  Choice02: Leave, go plant the mushrooms and start a buisness.
   Choice03: 
-  Resource01_C01: 0
-  Resource01_C02: 0
+  Resource01_C01: -10
+  Resource01_C02: 5
   Resource02_C01: 0
-  Resource02_C02: -5
+  Resource02_C02: 5
   Resource03_C01: 0
-  Resource03_C02: -5
-  Resource04_C01: 5
+  Resource03_C02: 5
+  Resource04_C01: -5
   Resource04_C02: 0
   Resource05_C01: 0
   Resource05_C02: 0
-  Choice01_Outcome: 'He died in your arms but not before uttering the words: "La
-    Jaguar erre librement". (The Jaguar roams free)'
-  Choice02_Outcome: There wasnt much you could do for him.
+  Choice01_Outcome: You have lost at fighting ghosts.
+  Choice02_Outcome: Your buisness is flourishing.
   Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 

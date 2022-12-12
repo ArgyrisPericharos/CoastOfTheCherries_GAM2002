@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebba3d5ccbe0c5145b344dbb6a3b8bc9, type: 3}
-  m_Name: hotspot1
+  m_Name: Integrity25
   m_EditorClassIdentifier: 
-  DeckDescription: hotspot1 Deck
+  DeckDescription: Integrity 25 deck
   EventDeck:
-  - {fileID: 11400000, guid: fe5e5e3b4acf6054aa956e3d1c56146c, type: 2}
-  - {fileID: 11400000, guid: 951ca1e8882da4b409c5c1c6cdcf2c68, type: 2}
+  - {fileID: 11400000, guid: ce72a7f68e19f2441b0909d479374ad3, type: 2}
+  - {fileID: 11400000, guid: 0c067cfb60f02954e812f0869331cff7, type: 2}
+  - {fileID: 11400000, guid: 331bbe204f005f446ad18d0ae47d6de7, type: 2}
+  - {fileID: 11400000, guid: a3b5770db72b74544bd4743e8c010210, type: 2}

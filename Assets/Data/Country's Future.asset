@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Country's Future
+  m_EditorClassIdentifier: 
+  Description: Our country stands at a crossroads in history and the actions of every
+    person will affect our future. Politically theres only two options. Isolationism
+    or Expansionism.
+  Choice01: Endorse Isolationism.
+  Choice02: Endorse Expansionism.
+  Choice03: 
+  Resource01_C01: -10
+  Resource01_C02: 5
+  Resource02_C01: 0
+  Resource02_C02: 0
+  Resource03_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: 5
+  Resource04_C02: 10
+  Resource05_C01: 0
+  Resource05_C02: 0
+  Choice01_Outcome: The republic that will rise from our new beginings will ensure
+    our freedom and wellbeing for genrations to come, without getting involved into
+    foreign affairs.
+  Choice02_Outcome: The coalition against use is a problem! Monarchies and oligarchies
+    everywhere have an agenda to crush us. They are scared of what our world brings!
+    We shall crush them! But who could lead us into such endeavour?
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

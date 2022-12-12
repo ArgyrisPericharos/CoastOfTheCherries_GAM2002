@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Proposal
+  m_EditorClassIdentifier: 
+  Description: The world can be ours! We live in evil days, we have turned on each
+    other. But the world turns, what was may come again!
+  Choice01: Propose a domestic reform.
+  Choice02: Propose a military reform.
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 0
+  Resource02_C01: 5
+  Resource02_C02: 5
+  Resource03_C01: 10
+  Resource03_C02: 10
+  Resource04_C01: 10
+  Resource04_C02: 10
+  Resource05_C01: 0
+  Resource05_C02: 0
+  Choice01_Outcome: The people agree! Even though the revolution is importnat we
+    also need safety, low and order!
+  Choice02_Outcome: The army agrees! We need to professionalise if we hope to stand
+    against tyrants!
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

@@ -10,26 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
-  m_Name: Skrimish
+  m_Name: Spy
   m_EditorClassIdentifier: 
-  Description: You have come across a littered battlefield with the dead. A grim
-    view. You se a soldier seriously wounded and near death.
-  Choice01: Try to help him.
-  Choice02: Leave him to his fate.
+  Description: You catch a spy in your camp. Interrogation seems that it doesnt work
+    on this individual. But clearly whoever sent him has an agenda against you.
+  Choice01: No honour amongst thieves.
+  Choice02: Feed him wrong information.
   Choice03: 
   Resource01_C01: 0
   Resource01_C02: 0
   Resource02_C01: 0
-  Resource02_C02: -5
-  Resource03_C01: 0
-  Resource03_C02: -5
-  Resource04_C01: 5
+  Resource02_C02: 5
+  Resource03_C01: -15
+  Resource03_C02: 10
+  Resource04_C01: 0
   Resource04_C02: 0
   Resource05_C01: 0
   Resource05_C02: 0
-  Choice01_Outcome: 'He died in your arms but not before uttering the words: "La
-    Jaguar erre librement". (The Jaguar roams free)'
-  Choice02_Outcome: There wasnt much you could do for him.
+  Choice01_Outcome: You killed him, but he knew what he was getting into.
+  Choice02_Outcome: That will throw them of your scent.
   Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 

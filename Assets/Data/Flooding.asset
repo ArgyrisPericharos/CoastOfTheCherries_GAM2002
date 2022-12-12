@@ -26,8 +26,8 @@ MonoBehaviour:
   Resource04_C02: 0
   Resource05_C01: -5
   Resource05_C02: 0
-  Choice01_Outcome: 
-  Choice02_Outcome: 
+  Choice01_Outcome: You tried helping as many as you could!
+  Choice02_Outcome: Is their problem not mine!
   Choice03_Outcome: 
   Choice01_Special: 
   Choice02_Special: 

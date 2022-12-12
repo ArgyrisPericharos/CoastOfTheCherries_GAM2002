@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Band of soldiers
+  m_EditorClassIdentifier: 
+  Description: As you ride through the country a small band of soldiers approach
+    you. They ask for supplies and directions as they are lost. They have heard of
+    you before a seem to trust you.
+  Choice01: Help them
+  Choice02: Insult them
+  Choice03: 
+  Resource01_C01: -5
+  Resource01_C02: 10
+  Resource02_C01: 5
+  Resource02_C02: 0
+  Resource03_C01: 5
+  Resource03_C02: -5
+  Resource04_C01: 15
+  Resource04_C02: 0
+  Resource05_C01: -10
+  Resource05_C02: 0
+  Choice01_Outcome: You help their wounded, give them food and even escort them to
+    the nearest town. The proper thing to do!
+  Choice02_Outcome: They take your threats seriously and you are at a stand off.
+    You warn them of your greater numbers. They withdraw.
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

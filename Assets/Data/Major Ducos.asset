@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Major Ducos
+  m_EditorClassIdentifier: 
+  Description: 
+  Choice01: You have come across the camp of Major Ducos, he welcomes you. A gentleman
+    but selfish, but one that likes to ge the job done. He asks you to join him tracking
+    down a rebel brigade in the area.
+  Choice02: Ride with him.
+  Choice03: I will spare supplies.
+  Resource01_C01: -5
+  Resource01_C02: 0
+  Resource02_C01: 10
+  Resource02_C02: 0
+  Resource03_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: 15
+  Resource04_C02: 10
+  Resource05_C01: 0
+  Resource05_C02: -10
+  Choice01_Outcome: Your parties ride out and before long you find the rebels. The
+    artillery fire commences! And ducos personally leads the charge with you by his
+    side. After 2 days of hardfighting the rebels surrunder. Ducos hounors you with
+    a medal and calls you a Hero for the valour you showed in battle!
+  Choice02_Outcome: He graciesouly accept but feails to hide his dissapointment with
+    your lack of initiative.
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

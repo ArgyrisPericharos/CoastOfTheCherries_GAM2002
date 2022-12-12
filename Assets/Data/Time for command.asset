@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
+  m_Name: Time for command
+  m_EditorClassIdentifier: 
+  Description: Ambush! Your party and retinue have been ambushed by ough men with
+    little to lose, Brigands! Your party looks towards you to lead them to victory.
+  Choice01: Seek for a defending position in the nearby villlage.
+  Choice02: Engage the bandits before they can take advantage of their position.
+  Choice03: 
+  Resource01_C01: 0
+  Resource01_C02: 0
+  Resource02_C01: 10
+  Resource02_C02: 5
+  Resource03_C01: 0
+  Resource03_C02: 0
+  Resource04_C01: 10
+  Resource04_C02: -5
+  Resource05_C01: 0
+  Resource05_C02: 0
+  Choice01_Outcome: As you make way for a neraby farmstead a light skrimish happens
+    at the rear of your party. The fire and smoke of it makes many in your party
+    to run away and flee. But those amongst you that stay, help you to reach the
+    farmstead. Once there the fight fully comences, bandits rushing and attacking
+    you at the farmastead. But the battle goes your way!  you put up a good defence,
+    beating them easily. Victoire!
+  Choice02_Outcome: After a courageous speech your party is rallied and makes for
+    the enemy position. But is a blunder! The bandits consist mostly of army deserters,
+    men with plenty of experience in the field. Most in your party go down easily.
+    But the way you fight inspires the remaining followers in your party for a last
+    push! The bandits inevitably realise to win this fight many of them have to fall
+    thinking that it might not worth it they tactically withdraw. After a long and
+    hardfought day your party is cut half-fold. A phyrric Victory.
+  Choice03_Outcome: 
+  Choice01_Special: 
+  Choice02_Special: 
+  Huntsman: 0
+  Revolutionairy: 0

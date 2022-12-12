@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject ValuesScreen;
+
     public DeckTemplate starterDeck;
     //starter deck
     public DeckTemplate AddedDeckResource10;
@@ -134,6 +136,10 @@ public class GameManager : MonoBehaviour
     public bool HotSpot5event;
     public bool savedforlaterfor5;
 
+    public bool RevoMovement;
+    public bool HuntsMovement;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -182,6 +188,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (endGame == true)
+        {
+            ValuesScreen.SetActive(true);
+        }
+
+        HuntsMovement = true;
+        RevoMovement = true;
 
         if (PawnMoved == false)
         {
@@ -467,6 +481,7 @@ public class GameManager : MonoBehaviour
 
         }
 
+        /*
         if (Revolutionairy == true)
         {
             RevoCheck = true;
@@ -480,12 +495,27 @@ public class GameManager : MonoBehaviour
         if (HuntsmanCheck == true)
         {
             HuntsPawn.SetActive(true);
+            
         }
 
         if (RevoCheck == true)
         {
             RevoPawn.SetActive(true);
+            
         }
+
+        if (RevoPawn.activeInHierarchy && RevoMovement == true)
+        {
+            PawnMoved = false;
+            RevoMovement = false;
+        }
+
+        if (HuntsPawn.activeInHierarchy && HuntsMovement == true)
+        {
+            PawnMoved = false;
+            HuntsMovement = false;
+        }
+        */
 
         /*
         if ((Revolutionairy == true) && (RevoCheck == true)) 
@@ -533,8 +563,7 @@ public class GameManager : MonoBehaviour
         hotspotScript = Mycurrenthotspotarrived;
         if (Mycurrenthotspotarrived.hsName == "hotspot1")
         {
-            FixareaEvent = true;
-            NormalEvent = false;
+
             showAfter = false;
             
 
@@ -545,80 +574,86 @@ public class GameManager : MonoBehaviour
             {
                 if (currentDeck.DeckDescription == "hotspot1 Deck")
                 {
-                    eventSet = true;
-
-                    MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
-                    ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
-                    ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
-
-                    //HotspotList = currentDeck.EventDeck;
-
-                    foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                    if (currentDeck.EventDeck.Count > Mycurrenthotspotarrived.progressNumber)
                     {
-                        HotspotList.Add(eventCard);
+                        NormalEvent = false;
+                        FixareaEvent = true;
+                        eventSet = true;
+
+                        MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
+                        ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
+                        ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+
+                        //HotspotList = currentDeck.EventDeck;
+
+                        foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                        {
+                            HotspotList.Add(eventCard);
+                        }
+
                     }
-
-
+                    else
+                    {
+                        NormalEvent = true;
+                        FixareaEvent = false;
+                        ShowEventData();
+                        eventSet = true;
+                    }
 
                 }
             }
+
         }
-        else if (!eventSet && PawnMoved)
-        {
-            NormalEvent = true;
-            FixareaEvent = false;
-            ShowEventData();
-            eventSet = true;
-        }
+
 
         if (Mycurrenthotspotarrived.hsName == "hotspot2")
         {
-            FixareaEvent = true;
-            NormalEvent = false;
             showAfter = false;
             
 
             ChoiceOneText.transform.parent.gameObject.SetActive(true);
             ChoiceThreeText.transform.parent.gameObject.SetActive(false);
-
+            
             foreach (DeckTemplate currentDeck in HotspotsDecks)
             {
                 if (currentDeck.DeckDescription == "hotspot2 Deck")
                 {
-                    eventSet = true;
-                    // GenereateHotspotList(currentDeck);
-                    // HotspotShowData(Mycurrenthotspotarrived.progressNumber);
+                    //Debug.Log(Mycurrenthotspotarrived.progressNumber);
 
-                    MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
-                    ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
-                    ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
-
-                    //HotspotList = currentDeck.EventDeck;
-
-                    foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                    if (currentDeck.EventDeck.Count > Mycurrenthotspotarrived.progressNumber)
                     {
-                        HotspotList.Add(eventCard);
-                    }
+                        FixareaEvent = true;
+                        NormalEvent = false;
+                        eventSet = true;
+                        // GenereateHotspotList(currentDeck);
+                        // HotspotShowData(Mycurrenthotspotarrived.progressNumber);
 
+                        MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
+                        ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
+                        ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+
+                        //HotspotList = currentDeck.EventDeck;
+
+                        foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                        {
+                            HotspotList.Add(eventCard);
+                        }
+                    }
+                    else
+                    {
+                        FixareaEvent = false;
+                        NormalEvent = true;
+                        ShowEventData();
+                        eventSet = true;
+                    }
                 }
             }
         }
-        else if (!eventSet && PawnMoved)
-        {
-            FixareaEvent = false;
-            NormalEvent = true;
-            ShowEventData();
-            eventSet = true;
-        }
+        
 
         if (Mycurrenthotspotarrived.hsName == "hotspot5")
         {
-            FixareaEvent = false;
-            NormalEvent = false;
             showAfter = false;
-            HotSpot5event = true;
-
-
             ChoiceOneText.transform.parent.gameObject.SetActive(true);
             ChoiceThreeText.transform.parent.gameObject.SetActive(true);
 
@@ -626,24 +661,38 @@ public class GameManager : MonoBehaviour
             {
                 if (currentDeck.DeckDescription == "hotspot5 Deck")
                 {
-                    eventSet = true;
-
-                    MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
-                    ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
-                    ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
-                    ChoiceThreeText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice03;
-
-                    //HotspotList = currentDeck.EventDeck;
-
-                    foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                    if (currentDeck.EventDeck.Count > Mycurrenthotspotarrived.progressNumber)
                     {
-                        HotspotList.Add(eventCard);
+                        FixareaEvent = false;
+                        NormalEvent = false;
+                        HotSpot5event = true;
+                        eventSet = true;
+
+                        MainBodyText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Description;
+                        ChoiceOneText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice01;
+                        ChoiceTwoText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice02;
+                        ChoiceThreeText.text = currentDeck.EventDeck[Mycurrenthotspotarrived.progressNumber].Choice03;
+
+                        //HotspotList = currentDeck.EventDeck;
+
+                        foreach (EventTemplate eventCard in currentDeck.EventDeck)
+                        {
+                            HotspotList.Add(eventCard);
+                        }
+
+
                     }
-
-
-
+                    else
+                    {
+                        NormalEvent = true;
+                        FixareaEvent = false;
+                        ShowEventData();
+                        eventSet = true;
+                    }
                 }
+    
             }
+            
         }
         else if (!eventSet && PawnMoved)
         {
@@ -652,6 +701,8 @@ public class GameManager : MonoBehaviour
             ShowEventData();
             eventSet = true;
         }
+
+
     }
     /*
     public void GenereateHotspotList(DeckTemplate currentDeck)
@@ -676,8 +727,12 @@ public class GameManager : MonoBehaviour
 
         if (eventList.Count < 1)
         {
+            MainBodyText.text = EndingText;
             EndingText = "No More Cards!";
             endGame = true;
+            ChoiceThreeText.transform.parent.gameObject.SetActive(false);
+            ChoiceOneText.transform.parent.gameObject.SetActive(false);
+
         }
         else
         {

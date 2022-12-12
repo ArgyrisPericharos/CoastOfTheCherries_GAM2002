@@ -15,5 +15,5 @@ MonoBehaviour:
   DeckDescription: Merit75 deck
   EventDeck:
   - {fileID: 11400000, guid: cb03abc0f8463bd47a281e2daa0bb8bc, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: b841b2d2b53f87f4ba09a6a77798b1ac, type: 2}
+  - {fileID: 11400000, guid: bf0cb88aa875bfe4e9904ce06ac4b51a, type: 2}
