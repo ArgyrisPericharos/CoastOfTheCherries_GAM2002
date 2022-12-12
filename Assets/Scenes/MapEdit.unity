@@ -2347,6 +2347,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0.1, y: 0.9}
   m_SizeDelta: {x: 189.1743, y: 33.6858}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1030741238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5010113521314534092, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+  m_PrefabInstance: {fileID: 1634946823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1066323524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2560,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115495848}
   m_CullTransparentMesh: 1
+--- !u!1001 &1119117857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 729055118187288154, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_Name
+      value: Revolutionairy Pawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 729055118187288154, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.629278
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.65814304
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.090709135
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273784858033470469, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908014860759161235, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: newHotspot
+      value: 
+      objectReference: {fileID: 1066323528}
+    - target: {fileID: 5908014860759161235, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2006142422}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
 --- !u!1 &1130121284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,6 +3562,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1436525142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 729055118187288154, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
+  m_PrefabInstance: {fileID: 1119117857}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1475453362
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,6 +4063,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552887683}
   m_CullTransparentMesh: 1
+--- !u!1001 &1634946823
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5010113521314534092, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_Name
+      value: Huntsman Pawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5010113521314534092, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229455238069840873, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: newHotspot
+      value: 
+      objectReference: {fileID: 1066323528}
+    - target: {fileID: 5229455238069840873, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2006142422}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.629278
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.65814304
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.090709135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461133488020155921, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
 --- !u!1 &1691070320
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,8 +5004,8 @@ MonoBehaviour:
   Revolutionairy: 0
   HuntsmanCheck: 0
   RevoCheck: 0
-  RevoPrefab: {fileID: 729055118187288154, guid: a3ecea38bdbd0764ab1a7579fe2737a8, type: 3}
-  HuntsPrefab: {fileID: 5010113521314534092, guid: 560375071dcf5854ba845ad9f855854c, type: 3}
+  RevoPawn: {fileID: 1436525142}
+  HuntsPawn: {fileID: 1030741238}
   SpawnPosition: {fileID: 567431846}
   eventList: []
   HotspotList: []

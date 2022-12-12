@@ -76,8 +76,8 @@ public class GameManager : MonoBehaviour
     public bool HuntsmanCheck;
     public bool RevoCheck;
 
-    public GameObject RevoPrefab;
-    public GameObject HuntsPrefab;
+    public GameObject RevoPawn;
+    public GameObject HuntsPawn;
 
     public Transform SpawnPosition;
 
@@ -141,8 +141,8 @@ public class GameManager : MonoBehaviour
         Huntsman = false;
         Revolutionairy = false;
         
-        HuntsmanCheck = true;
-        RevoCheck = true;
+        HuntsmanCheck = false;
+        RevoCheck = false;
 
         AddDeckResource10 = false;
         AddDeckResource1100 = false;
@@ -467,6 +467,27 @@ public class GameManager : MonoBehaviour
 
         }
 
+        if (Revolutionairy == true)
+        {
+            RevoCheck = true;
+        }
+
+        if (Huntsman == true)
+        {
+            HuntsmanCheck = true;
+        }
+
+        if (HuntsmanCheck == true)
+        {
+            HuntsPawn.SetActive(true);
+        }
+
+        if (RevoCheck == true)
+        {
+            RevoPawn.SetActive(true);
+        }
+
+        /*
         if ((Revolutionairy == true) && (RevoCheck == true)) 
         {
             Instantiate(RevoPrefab, SpawnPosition);
@@ -480,6 +501,7 @@ public class GameManager : MonoBehaviour
             HuntsPrefab.transform.position = SpawnPosition.transform.position;
             HuntsmanCheck = false;
         }
+        */
 
     }
 
