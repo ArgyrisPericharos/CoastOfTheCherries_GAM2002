@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829cdefa70e3574409dff236dd268358, type: 3}
   m_Name: Major Ducos
   m_EditorClassIdentifier: 
-  Description: 
-  Choice01: You have come across the camp of Major Ducos, he welcomes you. A gentleman
+  Description: You have come across the camp of Major Ducos, he welcomes you. A gentleman
     but selfish, but one that likes to ge the job done. He asks you to join him tracking
     down a rebel brigade in the area.
-  Choice02: Ride with him.
-  Choice03: I will spare supplies.
+  Choice01: Ride with him.
+  Choice02: I will spare supplies.
+  Choice03: 
   Resource01_C01: -5
   Resource01_C02: 0
   Resource02_C01: 10

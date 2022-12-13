@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: The BadlandsTwo
   m_EditorClassIdentifier: 
   Description: 'Moving deeper into badland country you coome across a watch tower. '
-  Choice01: Wait for the cover of the night to sneak past.
-  Choice02: Engage the tower head on.
+  Choice01: Wait for the cover of the night to sneak past. (+75 fear required)
+  Choice02: Engage the tower head on. (+75 Merit)
   Choice03: Leave
   Resource01_C01: 0
   Resource01_C02: 0

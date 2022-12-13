@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: The terriotry of Jaguar. A complete anarchist state in our country.
     We have to tread carefully here.
-  Choice01: Go forth
-  Choice02: Explore the Borders.
+  Choice01: Go forth. (+75 fear required)
+  Choice02: Explore the Borders.  (+75 merit required)
   Choice03: Leave
   Resource01_C01: 10
   Resource01_C02: 0
@@ -29,10 +29,10 @@ MonoBehaviour:
   Resource05_C02: 0
   Choice01_Outcome: Badland country is grim, dry and mostly dead. You see the occational
     rotten corpse in the roads and the run down houses. And ofcourse the flags and
-    insignia of the Jaguar warlord.(+75 fear required)
+    insignia of the Jaguar warlord.
   Choice02_Outcome: You get approached by a bandit gun readied. He warns if you come
     closer he will shoot. One of your followers however shoots him before he could
-    utter another word. (+75 merit required)
+    utter another word.
   Choice03_Outcome: 'Maybe we can come back at another time. '
   Choice01_Special: 
   Choice02_Special: 
