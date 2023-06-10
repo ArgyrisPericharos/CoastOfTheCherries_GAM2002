@@ -17,7 +17,7 @@ MonoBehaviour:
   Choice02: Ignore.
   Choice03: null
   Resource01_C01: 0
-  Resource01_C02: 5
+  Resource01_C02: 10
   Resource02_C01: 0
   Resource02_C02: 0
   Resource03_C01: -10
